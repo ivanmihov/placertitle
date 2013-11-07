@@ -2,6 +2,9 @@
 {
     font-family: Calibri, Arial, Sans-Serif;
     font-size: 1em;
+    border-collapse: collapse;
+    background-image: url("images/bg-body.jpg");
+    margin: 0px;
 }
 
 .header 
@@ -13,12 +16,22 @@
 
 .logo
 {
-    padding-top: 10px;
+    width: 980px;
+    margin: -133px auto 0px auto;
 }
 
 .main
 {
     margin: 0px auto;
     width: 980px;
-    border: 1px solid black;
+    height: 500px;
+    background-color: White;
+}
+
+.menu_wrapper
+{
+    background-image: url("images/bg-menu-wrapper.png");
+    background-repeat: repeat-x;
+    height: 25px;
+    width: 100%;
 }
