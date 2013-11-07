@@ -10,7 +10,7 @@
 namespace PTCOrderSite {
     
     
-    public partial class Site1 {
+    public partial class PTCOrderSiteMaster {
         
         /// <summary>
         /// head control.
