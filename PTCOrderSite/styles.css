@@ -42,18 +42,60 @@ body
 /* General Layout/Coloring
  * ----------------------- */
 
+h1
+{
+    border-bottom: 2px solid black;
+    padding: 50px 20px 0px 20px;
+}
+
 .formBox
 {
     background-color: #EEFAFF;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 100px auto 0px auto;
 }
+
+.narrowForm
+{
+    width: 300px;
+}
+
+.mediumForm
+{
+    width: 500px;
+}
+
+.wideForm
+{
+    width: 700px;
+}
+
+/* Login
+ * ----- */
  
- /* Login Page
-  * ---------- */
- 
- .loginBox
- {
-     margin: 200px auto 0px auto;
-     width: 500px;
-     border: 1px solid black;
-     padding: 10px;
- }
+.loginButton
+{
+    margin: 10px auto 0px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.loginPane
+{
+    width: 300px;
+}
+
+.loginInput
+{
+    width: 150px;
+    margin-left: 50px;
+}
+
+.loginLabel
+{
+    font-style: italic;
+    font-weight: bold;
+    width: 150px;
+    margin-left: 50px;
+}
