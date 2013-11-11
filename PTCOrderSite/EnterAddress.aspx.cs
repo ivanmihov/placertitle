@@ -13,5 +13,10 @@ namespace PTCOrderSite
         {
 
         }
+
+        protected void cmdSubmit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ValidateAddress.aspx");
+        }
     }
 }

@@ -2,4 +2,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
+
+<h1>Validate Address</h1>
+
+<div class="formBox mediumForm">
+
+    <asp:Table runat="server" ID="tblSearchResults"></asp:Table>
+    <div class="formElement formSubmit"><asp:Button runat="server" Text="Continue" 
+            ID="cmdContinue" onclick="cmdContinue_Click" /></div>
+
+</div>
+
 </asp:Content>

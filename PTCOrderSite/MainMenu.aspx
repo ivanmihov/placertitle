@@ -4,8 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 <h1>Welcome {First Name}</h1>
 
-<div class="wideForm formBox">
-    <h2>Operations</h2>
+<div class="mediumForm formBox">
+    <h3>Operations</h3>
     <ul>
         <li><asp:HyperLink runat="server" Text="Open an Order" NavigateUrl="~/EnterAddress.aspx"></asp:HyperLink></li>
         <li><asp:HyperLink runat="server" Text="Log Out" NavigateUrl="~/Login.aspx"></asp:HyperLink></li>

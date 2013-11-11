@@ -8,6 +8,12 @@ a:hover, a:active {
   color: #2dbfff;
 }
 
+h1
+{
+    border-bottom: 2px solid black;
+    padding: 50px 20px 0px 20px;
+}
+
 h3 {
   color: #003082;
 }
@@ -66,18 +72,30 @@ body
 /* General Layout/Coloring
  * ----------------------- */
 
-h1
-{
-    border-bottom: 2px solid black;
-    padding: 50px 20px 0px 20px;
-}
-
 .formBox
 {
     background-color: #EEFAFF;
     border: 1px solid black;
     padding: 10px;
     margin: 100px auto 0px auto;
+}
+
+.formElement
+{
+    width: 250px;
+    margin-left: 50px;
+}
+
+.formLabel
+{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.formSubmit
+{
+    margin-top: 10px;
+    text-align: center;
 }
 
 .narrowForm
@@ -95,31 +113,26 @@ h1
     width: 700px;
 }
 
-/* Login
- * ----- */
- 
-.loginButton
+
+/* Address Screen
+ * -------------- */
+
+.address
 {
-    margin: 10px auto 0px auto;
-    width: 100%;
-    text-align: center;
+    width: 210px;
 }
 
-.loginPane
+.city
 {
-    width: 300px;
+    width: 140px;
 }
 
-.loginInput
+.state
 {
-    width: 150px;
-    margin-left: 50px;
+    width: 20px;
 }
 
-.loginLabel
+.zip
 {
-    font-style: italic;
-    font-weight: bold;
-    width: 150px;
-    margin-left: 50px;
+    width: 40px;
 }

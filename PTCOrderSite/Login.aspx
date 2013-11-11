@@ -6,14 +6,12 @@
 <h1>Please Login</h1>
 
 <div class="formBox narrowForm">
-    <div class="loginPane">
-        <div class="loginLabel">Username</div>
-        <div class="loginInput"><asp:TextBox runat="server" ID="txtUsername"></asp:TextBox></div>
-        <div class="loginLabel">Password</div>
-        <div class="loginInput"><asp:TextBox runat="server" ID="txtPassword"></asp:TextBox></div>
-        <div class="loginButton"><asp:Button runat="server" ID="cmdSubmit" Text="Login" 
-                onclick="cmdSubmit_Click" /></div>
-    </div>
+    <div class="formLabel formElement">Username</div>
+    <div class="formElement"><asp:TextBox runat="server" ID="txtUsername"></asp:TextBox></div>
+    <div class="formLabel formElement">Password</div>
+    <div class="formElement"><asp:TextBox runat="server" ID="txtPassword"></asp:TextBox></div>
+    <div class="formElement formSubmit"><asp:Button runat="server" ID="cmdSubmit" Text="Login" 
+            onclick="cmdSubmit_Click" /></div>
 </div>
 
 </asp:Content>

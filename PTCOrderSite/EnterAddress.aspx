@@ -3,6 +3,16 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 <h1>Please Enter an Address</h1>
-<div class="formBox wideForm">
+<div class="formBox mediumForm">
+    <div class="formElement formLabel"><asp:Label runat="server" ID="lblAddress" Text="Address"></asp:Label></div>
+    <div class="formElement"><asp:TextBox runat="server" ID="txtAddress" CssClass="address"></asp:TextBox></div>
+    <div class="formElement formLabel"><asp:Label runat="server" ID="lblCityStateZip" Text="City/State/Zip"></asp:Label></div>
+    <div class="formElement">
+        <asp:TextBox runat="server" ID="txtCity" CssClass="city"></asp:TextBox>
+        <asp:TextBox runat="server" ID="txtState" CssClass="state"></asp:TextBox>
+        <asp:TextBox runat="server" ID="txtZip" CssClass="zip"></asp:TextBox>
+    </div>
+    <div class="formElement formSubmit"><asp:Button runat="server" ID="cmdSubmit" 
+            Text="Submit" onclick="cmdSubmit_Click" /></div>
 </div>
 </asp:Content>
