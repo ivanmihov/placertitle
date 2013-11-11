@@ -1,17 +1,41 @@
-﻿/* Master page layout elements
+﻿/* Text Styles
+ * ----------- */
+
+a, a:visited {
+  color: #2dbfff;
+}
+a:hover, a:active {
+  color: #2dbfff;
+}
+
+h3 {
+  color: #003082;
+}
+h4 {
+  color: #000000;
+}
+h5 {
+  color: #F9B600;
+  text-shadow: 1px 1px 0 #555555;
+  text-transform: uppercase;
+}
+h6 {
+  color: #000000;
+}
+
+/* Master page layout elements
  * --------------------------- */
 body
 {
     font-family: Calibri, Arial, Sans-Serif;
     font-size: 1em;
-    border-collapse: collapse;
-    background-image: url("images/bg-body.jpg");
+    background: #00070E url('images/bg-body.jpg') repeat-x center 138px;
     margin: 0px;
 }
 
 .header 
 {
-    background-image: url("images/bg-header.jpg");
+    background: url('images/bg-header.jpg') repeat-x center 0;
     width: 1700px;
     height: 138px;
 }
