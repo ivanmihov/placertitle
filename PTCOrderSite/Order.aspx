@@ -134,5 +134,6 @@
 </asp:Accordion>
    
     </div>
-
+    <div style="text-align:center"><asp:Button runat="server" ID="cmdSubmit" Text="Submit" 
+            onclick="cmdSubmit_Click" /></div>
 </asp:Content>
