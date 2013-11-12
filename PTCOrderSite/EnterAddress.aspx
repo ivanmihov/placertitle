@@ -13,6 +13,6 @@
         <asp:TextBox runat="server" ID="txtZip" CssClass="zip"></asp:TextBox>
     </div>
     <div class="formElement formSubmit"><asp:Button runat="server" ID="cmdSubmit" 
-            Text="Submit" onclick="cmdSubmit_Click" /></div>
+            Text="Submit" PostBackUrl="~/ValidateAddress.aspx" /></div>
 </div>
 </asp:Content>

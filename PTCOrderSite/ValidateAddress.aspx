@@ -9,7 +9,7 @@
 
     <asp:Table runat="server" ID="tblSearchResults"></asp:Table>
     <div class="formElement formSubmit"><asp:Button runat="server" Text="Continue" 
-            ID="cmdContinue" onclick="cmdContinue_Click" /></div>
+            ID="cmdContinue" PostBackUrl="~/Order.aspx" /></div>
 
 </div>
 
