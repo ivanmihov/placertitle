@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
-<h1>Place Order</h1>
+<h1>Don't Place Order</h1>
 
     <div>
     
