@@ -7,7 +7,7 @@
 
 <div class="formBox mediumForm">
 
-    <asp:Table runat="server" ID="tblSearchResults"></asp:Table>
+    <asp:RadioButtonList runat="server" ID="rdbtnlstAddresses"></asp:RadioButtonList>
     <div class="formElement formSubmit"><asp:Button runat="server" Text="Continue" 
             ID="cmdContinue" PostBackUrl="~/Order.aspx" /></div>
 
