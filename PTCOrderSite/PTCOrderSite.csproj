@@ -65,6 +65,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\bg-accordion.png" />
     <Content Include="images\bg-body.jpg" />
     <Content Include="images\bg-header.jpg" />
     <Content Include="images\bg-menu-wrapper.png" />
