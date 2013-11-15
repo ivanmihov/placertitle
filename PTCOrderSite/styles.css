@@ -75,7 +75,7 @@ body
 .formBox
 {
     background-color: #EEFAFF;
-    border: 1px solid black;
+    border: 1px solid #2F4F4F;
     padding: 10px;
     margin: 100px auto 0px auto;
 }
@@ -170,8 +170,8 @@ body
 }
         
 .accordionContent {
-    background-color: #D3DEEF;
-    border: 1px dashed #2F4F4F;
+    background-color: #EEFAFF;
+    border: 1px solid #2F4F4F;
     border-top: none;
     padding: 5px;
     padding-top: 10px;
@@ -200,7 +200,7 @@ table.accordionBorder {
 }
 
 table.accordionBorder td, table.bottomBorder th { 
-    border-bottom:1px dotted black;
+    border-bottom:1px solid black;
     padding:5px; 
 }
 

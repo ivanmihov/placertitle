@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-<h1>Welcome {First Name}</h1>
+<h1>Welcome <% Response.Write(Session["username"]); %></h1>
 
 <div class="mediumForm formBox">
     <h3>Operations</h3>

@@ -16,6 +16,7 @@ namespace PTCOrderSite
             rdbtnSelection.Text = rdbtnSelection.Value = String.Format("{0}, {1}, {2} {3}",
                 Request.Form["ctl00$body$txtAddress"], Request.Form["ctl00$body$txtCity"],
                 Request.Form["ctl00$body$txtState"], Request.Form["ctl00$body$txtZip"]);
+            rdbtnSelection.Selected = true; // Default the first one to be selected
             rdbtnlstAddresses.Items.Add(rdbtnSelection);
 
             // Add some additional items for demonstration
@@ -24,7 +25,7 @@ namespace PTCOrderSite
             rdbtnSelection = new ListItem("Third Result");
             rdbtnlstAddresses.Items.Add(rdbtnSelection);
 
-            // Add one for keep as entered
+            // Add an other item keep as entered
             rdbtnSelection = new ListItem("Other");
             rdbtnlstAddresses.Items.Add(rdbtnSelection);
         }
