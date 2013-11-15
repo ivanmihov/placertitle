@@ -14,6 +14,8 @@
         <span class="rememberUser">Remember Username</span>
         <asp:Button runat="server" ID="cmdSubmit" Text="Login" 
             onclick="cmdSubmit_Click" /></div>
+    <div class="forgotCredentials">Forgot Username or Password?</div>
+    <div class="requestId">Request Username</div>
 </div>
 
 </asp:Content>

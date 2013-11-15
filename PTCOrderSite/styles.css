@@ -72,13 +72,28 @@ body
 /* Login Page */
 
 .loginFormBox {
-        background: url('images/bg-login.png') repeat-x center 0;
+    background: url('images/bg-login.png') repeat-x center 0;
 }
+
+.forgotCredentials {
+    text-align:left;
+    color:#047fa2;
+    margin-top: 15px;
+}
+
+.requestId {
+    text-align:left;
+    color:#047fa2;
+    margin-top: 10px;
+}
+
 /* General Layout/Coloring
  * ----------------------- */
 .loginTextbox {
-        text-align:center;
-
+    text-align: center;
+    width: 210px;
+    height: 24px;
+    border-radius: 7px;
 }
 
 .rememberUser {
@@ -87,11 +102,12 @@ body
 
 .formBox
 {
-    text-align:left;
+    text-align: center;
     background-color: #EEFAFF;
     border: 1px solid black;
     padding: 10px;
     margin: 100px auto 0px auto;
+}
 }
 
 .formElement
@@ -114,8 +130,9 @@ body
 
 .narrowForm
 {
-    width: 300px;
+    width: 250px;
     border-radius: 5px;
+    height: 190px;
 }
 
 .mediumForm
