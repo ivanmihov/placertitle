@@ -29,6 +29,11 @@ h6 {
   color: #000000;
 }
 
+input 
+{
+  border-radius: 7px;
+}
+
 /* Master page layout elements
  * --------------------------- */
 body
@@ -73,6 +78,7 @@ body
 
 .loginFormBox {
     background: url('images/bg-login.png') repeat-x center 0;
+    height: 190px;
 }
 
 .forgotCredentials {
@@ -87,14 +93,14 @@ body
     margin-top: 10px;
 }
 
-/* General Layout/Coloring
- * ----------------------- */
 .loginTextbox {
     text-align: center;
     width: 210px;
     height: 24px;
-    border-radius: 7px;
 }
+
+/* General Layout/Coloring
+ * ----------------------- */
 
 .rememberUser {
     color:white;
@@ -102,12 +108,11 @@ body
 
 .formBox
 {
-    text-align: center;
     background-color: #EEFAFF;
     border: 1px solid black;
     padding: 10px;
     margin: 100px auto 0px auto;
-}
+    border-radius: 5px;
 }
 
 .formElement
@@ -131,8 +136,6 @@ body
 .narrowForm
 {
     width: 250px;
-    border-radius: 5px;
-    height: 190px;
 }
 
 .mediumForm
