@@ -26,16 +26,16 @@
             <table class="accordionBorder">
                 <tr>
                     <td class="tableFirstColumn">Your Reference #</td>
-                    <td class="tableSecondColumn"><asp:TextBox runat="server" ID="referenceNum"></asp:TextBox></td>
+                    <td class="tableSecondColumn"><asp:TextBox runat="server" ID="referenceNum" CssClass="textbox"></asp:TextBox></td>
                     <td class="tableThirdColumn"></td>
                     <td class="tableFourthColumn"></td>
                 </tr>
                 <tr>
                     <td class="tableFirstColumn">Person Entering Order<span class="red">*</span></td>
-                    <td class="tableSecondColumn"><asp:TextBox runat="server" ID="personEnterOrder"></asp:TextBox></td>
+                    <td class="tableSecondColumn"><asp:TextBox runat="server" ID="personEnterOrder" CssClass="textbox"></asp:TextBox></td>
                     <td class="tableThirdColumn">You are the<span class="red">*</span></td>
                     <td class="tableFourthColumn">
-                        <asp:DropDownList id="youAreThe" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="youAreThe" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -48,7 +48,7 @@
                 <tr>
                     <td class="tableFirstColumn">Transaction Type<span class="red">*</span></td>
                     <td class="tableSecondColumn">
-                        <asp:DropDownList id="transactionType" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="transactionType" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -70,7 +70,7 @@
                 <tr>
                     <td class="tableFirstColumn">Office<span class="red">*</span></td>
                     <td class="tableSecondColumn">
-                        <asp:DropDownList id="office" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="office" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -81,7 +81,7 @@
                     </td>
                     <td class="tableThirdColumn">Escrow Officer<span class="red">*</span></td>
                     <td class="tableFourthColumn">
-                        <asp:DropDownList id="escrowOfficer" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="escrowOfficer" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -94,7 +94,7 @@
                 <tr>
                     <td class="tableFirstColumn">Policy Type</td>
                     <td class="tableSecondColumn">
-                        <asp:DropDownList id="policyType" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="policyType" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -105,7 +105,7 @@
                     </td>
                     <td class="tableThirdColumn">Est. Closing Date<span class="red">*</span></td>
                     <td class="tableFourthColumn">
-                        <asp:TextBox ID="estClosingDate" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="estClosingDate" runat="server" CssClass="textbox"></asp:TextBox>
                         <asp:CalendarExtender ID="CalendarExtenderClosingDate" TargetControlID="estClosingDate" runat="server" />
                     </td>
                 </tr>
@@ -118,9 +118,9 @@
             <table class="accordionBorder">
                 <tr>
                     <td class="tableFirstColumn">Purchase Price</td>
-                    <td class="tableSecondColumn">$<asp:TextBox runat="server" ID="purchasePrice"></asp:TextBox></td>
+                    <td class="tableSecondColumn">$<asp:TextBox runat="server" ID="purchasePrice" CssClass="textbox"></asp:TextBox></td>
                     <td class="tableThirdColumn">Earnest Money Deposit</td>
-                    <td class="tableFourthColumn">$<asp:TextBox runat="server" ID="moneyDeposit"></asp:TextBox></td>
+                    <td class="tableFourthColumn">$<asp:TextBox runat="server" ID="moneyDeposit" CssClass="textbox"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td class="tableFirstColumn"><strong>Commisions</strong></td>
@@ -130,15 +130,15 @@
                 </tr>
                 <tr>
                     <td class="tableFirstColumn">Listing Company</td>
-                    <td class="tableSecondColumn"><asp:TextBox runat="server" ID="listingCompany"></asp:TextBox>%</td>
+                    <td class="tableSecondColumn"><asp:TextBox runat="server" ID="listingCompany" CssClass="textbox"></asp:TextBox>%</td>
                     <td class="tableThirdColumn">and/or</td>
-                    <td class="tableFourthColumn"><asp:TextBox runat="server" ID="listingCompanyAndOr"></asp:TextBox>%</td>
+                    <td class="tableFourthColumn"><asp:TextBox runat="server" ID="listingCompanyAndOr" CssClass="textbox"></asp:TextBox>%</td>
                 </tr>
                 <tr>
                     <td class="tableFirstColumn">Selling Company</td>
-                    <td class="tableSecondColumn"><asp:TextBox runat="server" ID="sellingCompany"></asp:TextBox>%</td>
+                    <td class="tableSecondColumn"><asp:TextBox runat="server" ID="sellingCompany" CssClass="textbox"></asp:TextBox>%</td>
                     <td class="tableThirdColumn">and/or</td>
-                    <td class="tableFourthColumn"><asp:TextBox runat="server" ID="sellingCompanyAndOr"></asp:TextBox>%</td>
+                    <td class="tableFourthColumn"><asp:TextBox runat="server" ID="sellingCompanyAndOr" CssClass="textbox"></asp:TextBox>%</td>
                 </tr>
             </table>
         </Content>
@@ -150,7 +150,7 @@
                 <tr>
                     <td class="tableFirstColumn">Title</td>
                     <td class="tableSecondColumn">
-                        <asp:DropDownList id="title" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="title" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -161,7 +161,7 @@
                     </td>
                     <td class="tableThirdColumn">Escrow</td>
                     <td class="tableFourthColumn">
-                        <asp:DropDownList id="escrow" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="escrow" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -174,7 +174,7 @@
                 <tr>
                     <td class="tableFirstColumn">Transfer Tax</td>
                     <td class="tableSecondColumn">
-                        <asp:DropDownList id="transferTax" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="transferTax" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -185,7 +185,7 @@
                     </td>
                     <td class="tableThirdColumn">City Transfer Tax</td>
                     <td class="tableFourthColumn">
-                        <asp:DropDownList id="cityTransferTax" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="cityTransferTax" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -199,12 +199,12 @@
                     <td class="tableFirstColumn">Homeowners Association?</td>
                     <td class="tableSecondColumn"><asp:CheckBox runat="server" ID="homeownersAssoc" /></td>
                     <td class="tableThirdColumn">Name</td>
-                    <td class="tableFourthColumn"><asp:TextBox runat="server" ID="name"></asp:TextBox></td>
+                    <td class="tableFourthColumn"><asp:TextBox runat="server" ID="name" CssClass="textbox"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td class="tableFirstColumn">Transfer Fee</td>
                     <td class="tableSecondColumn">
-                        <asp:DropDownList id="transferFee" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="transferFee" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -219,7 +219,7 @@
                 <tr>
                     <td class="tableFirstColumn">Termite Report</td>
                     <td class="tableSecondColumn">
-                        <asp:DropDownList id="termiteReport" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="termiteReport" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -230,7 +230,7 @@
                     </td>
                     <td class="tableThirdColumn">Termite Work</td>
                     <td class="tableFourthColumn">
-                        <asp:DropDownList id="termiteWork" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="termiteWork" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -243,7 +243,7 @@
                 <tr>
                     <td class="tableFirstColumn">Roof Report</td>
                     <td class="tableSecondColumn">
-                        <asp:DropDownList id="roofReport" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="roofReport" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -254,7 +254,7 @@
                     </td>
                     <td class="tableThirdColumn">Home Warranty</td>
                     <td class="tableFourthColumn">
-                        <asp:DropDownList id="homeWarranty" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="homeWarranty" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -267,7 +267,7 @@
                 <tr>
                     <td class="tableFirstColumn">Hazard Disclosure</td>
                     <td class="tableSecondColumn">
-                        <asp:DropDownList id="hazardDisclosure" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="hazardDisclosure" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -278,7 +278,7 @@
                     </td>
                     <td class="tableThirdColumn">PTC to Order</td>
                     <td class="tableFourthColumn">
-                        <asp:DropDownList id="ptcOrder" AutoPostBack="True" runat="server">
+                        <asp:DropDownList id="ptcOrder" AutoPostBack="True" runat="server" CssClass="dropdown">
                         <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
                         <asp:ListItem Value="White"> White </asp:ListItem>
                         <asp:ListItem Value="Silver"> Silver </asp:ListItem>
@@ -305,6 +305,6 @@
     </div>
     <br />
     <div style="text-align:center"><asp:Button runat="server" ID="cmdSubmit" Text="Submit" 
-            onclick="cmdSubmit_Click" /></div>
+            onclick="cmdSubmit_Click" CssClass="submitButton"/></div>
     <br />
 </asp:Content>
