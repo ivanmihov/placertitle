@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ROOT>
+  <ERROR>0</ERROR>
+  <USERDATA>
+    <HW_PD>
+      <SETCODE>S</SETCODE>
+      <DESCRIPTION>Seller</DESCRIPTION>
+    </HW_PD>
+    <HW_PD>
+      <SETCODE>B</SETCODE>
+      <DESCRIPTION>Buyer</DESCRIPTION>
+    </HW_PD>
+    <HW_PD>
+      <SETCODE>50</SETCODE>
+      <DESCRIPTION>50%2F50</DESCRIPTION>
+    </HW_PD>
+    <HW_PD>
+      <SETCODE>W</SETCODE>
+      <DESCRIPTION>Waived</DESCRIPTION>
+    </HW_PD>
+    <HW_PD>
+      <SETCODE>LA</SETCODE>
+      <DESCRIPTION>Listing%20Agent</DESCRIPTION>
+    </HW_PD>
+    <HW_PD>
+      <SETCODE>SA</SETCODE>
+      <DESCRIPTION>Selling%20Agent</DESCRIPTION>
+    </HW_PD>
+  </USERDATA>
+</ROOT>

@@ -8,7 +8,7 @@
 <div class="formBox narrowForm loginFormBox">
     <div class="formElement"><asp:TextBox runat="server" ID="txtUsername" placeholder="Username" CssClass="loginTextbox"></asp:TextBox></div>
     <br />
-    <div class="formElement"><asp:TextBox runat="server" ID="txtPassword" placeholder="Password" CssClass="loginTextbox"></asp:TextBox></div>
+    <div class="formElement"><asp:TextBox runat="server" ID="txtPassword" placeholder="Password" CssClass="loginTextbox" TextMode="Password"></asp:TextBox></div>
     <div class="formElement formSubmit">
         <asp:CheckBox runat="server" ID="rememberLogin" />
         <span class="rememberUser">Remember Username</span>

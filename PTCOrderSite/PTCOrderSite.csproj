@@ -71,12 +71,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Confirmation.aspx" />
+    <Content Include="CityTransferTax.xml" />
+    <Content Include="DataQuickVerification.xml" />
+    <Content Include="Delivery.xml" />
+    <Content Include="EscrowOfficers.xml" />
+    <Content Include="EscrowPremium.xml" />
+    <Content Include="HazardDisclosure.xml" />
+    <Content Include="HazardPtcYN.xml" />
+    <Content Include="HoaTransferFee.xml" />
+    <Content Include="HomeWarranty.xml" />
     <Content Include="images\bg-accordion.png" />
     <Content Include="images\bg-body.jpg" />
     <Content Include="images\bg-header.jpg" />
     <Content Include="images\bg-menu-wrapper.png" />
     <Content Include="images\logo.png" />
+    <Content Include="OwnerPremium.xml" />
+    <Content Include="Products.xml" />
+    <Content Include="RoofReport.xml" />
     <Content Include="styles.css" />
+    <Content Include="TermiteReport.xml" />
+    <Content Include="TermiteWork.xml" />
+    <Content Include="TransactionTypes.xml" />
+    <Content Include="TransferTax.xml" />
+    <Content Include="UserLogin.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
