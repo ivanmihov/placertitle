@@ -5,7 +5,7 @@
 
 <h1>Please Login</h1>
 
-<div class="formBox narrowForm">
+<div class="formBox narrowForm loginFormBox">
     <div class="formElement"><asp:TextBox runat="server" ID="txtUsername" placeholder="Username" CssClass="loginTextbox"></asp:TextBox></div>
     <br />
     <div class="formElement"><asp:TextBox runat="server" ID="txtPassword" placeholder="Password" CssClass="loginTextbox"></asp:TextBox></div>
