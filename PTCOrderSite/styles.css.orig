@@ -1,0 +1,368 @@
+﻿/* Text Styles
+ * ----------- */
+
+a, a:visited {
+  color: #2dbfff;
+}
+a:hover, a:active {
+  color: #2dbfff;
+}
+
+h1
+{
+    border-bottom: 2px solid black;
+    padding: 50px 20px 0px 20px;
+}
+
+h3 {
+  color: #003082;
+}
+h4 {
+  color: #000000;
+}
+h5 {
+  color: #F9B600;
+  /*text-shadow: 1px 1px 0 #555555;*/
+  text-transform: uppercase;
+}
+h6 {
+  color: #000000;
+}
+
+/* Master page layout elements
+ * --------------------------- */
+body
+{
+    font-family: Calibri, Arial, Sans-Serif;
+    font-size: 1em;
+    background: #00070E url('images/bg-body.jpg') repeat-x center 138px;
+    margin: 0px;
+   /* padding-top: 80px;*/
+}
+
+.header 
+{
+    background: url('images/bg-header.jpg') repeat-x center 0;
+    width: 100%;
+    height: 138px;
+   
+}
+
+.logo
+{
+    width: 100%;
+    margin: 0px auto 0px auto;
+    height: 100%;
+}
+
+.container  {
+    width:960px; display:block; margin-left:auto;margin-right:auto; 
+}
+.main
+{
+    margin: 0px auto;
+<<<<<<< HEAD
+    width: 100%;
+    height: 500px;
+=======
+    width: 938px;
+    min-height: 450px;
+>>>>>>> 7a70be3dd56a9156c67eb59e0f0b0dd8b865b491
+    background-color: white;
+    border: 1px solid white;
+}
+
+.menu_wrapper
+{
+    /*background-image: url('images/bg-menu-wrapper.png');
+    background-repeat: repeat-x;*/
+    /*background-color:Aqua;
+    vertical-align:bottom;
+    height: 35px;
+    width: 100%;*/
+    
+    
+    
+        background-color: #dddddd;
+    background-image: radial-gradient(50% 100%, #dddddd, #333333);
+    color: #fff;
+    overflow: hidden;
+    height:64px;
+    -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+    
+    
+}
+
+/* modified from here on */
+
+/*nav{margin-bottom:10px; }*/
+nav ul {
+    overflow: hidden;
+    /*padding-bottom: 10px;*/
+    
+    opacity: 0.95;
+    border-radius: 5px;
+    list-style-type: none;
+    box-shadow: 0 250px 150px rgba(0,0,0,.2);
+}
+nav ul li {
+    float: left;
+    /*margin-right: 15px;   */    
+}
+nav ul li a 
+{
+    /*font-weight:bold;
+    font:14px, Helvetica, Verdana, Arial, sans-serif;*/
+    text-decoration:none;
+    
+    /*display:inline-block;
+    background-color:#00a9e4;*/
+    
+    
+    font: bold 18px/48px "Lato","Trebuchet MS", Arial, Helvetica, sans-serif;
+    display: block;
+    height: 35px;
+    border-bottom: 5px solid #143157;
+    background-color: #0f6fb2;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: inset 0 1px 0 #0081bd, inset 0 2px 0 #0078b0, inset 0 3px 0 #0070a3, 0 0 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    background-image: linear-gradient(top, rgb(15, 111, 178), rgb(34, 65, 112));
+}
+
+
+
+/* from here*/
+
+#nav ul li:first-child a {
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#nav ul li:last-child a {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#nav ul li a:hover {
+    box-shadow: inset 0 1px 0 #0070a3,inset 0 0 30px 0 #142a4a;
+    text-shadow: 0 1px 3px #143157;
+    border-bottom: 5px solid #0e223d;
+}
+#nav ul li a:active,
+#nav ul li a:active {
+    border-bottom: 1px solid #0e223d;
+    height: 35px;
+    padding-top: 2px;
+    box-shadow: inset 0 1px 0 #0070a3,inset 0 0 40px 0 #0d1b30;
+}
+#nav ul li a span{
+    border-left: 1px solid #143157;
+    border-right: 1px solid #1563a3;
+    height: 100%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-right:35px;
+}
+#nav ul li:first-child a  span{ border-left: none }
+#nav ul li:last-child a span{ border-right: none }
+
+/* to here */
+
+
+
+    
+}
+/*li a:hover, li a:focus, li a:current { color:#000;}*/
+
+
+/* end of modif */
+
+
+/* Login Page */
+
+.loginFormBox {
+        background: url('images/bg-login.png') repeat-x center 0;
+}
+/* General Layout/Coloring
+ * ----------------------- */
+.loginTextbox {
+        text-align:center;
+
+}
+
+.rememberUser {
+    color:white;
+}
+
+.formBox
+{
+    text-align:left;
+    background-color: #EEFAFF;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 100px auto 0px auto;
+}
+
+.formElement
+{
+    width: 250px;
+    margin-left: 50px;
+}
+
+.formLabel
+{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.formSubmit
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.narrowForm
+{
+    width: 300px;
+    border-radius: 5px;
+}
+
+.mediumForm
+{
+    width: 500px;
+}
+
+.wideForm
+{
+    width: 700px;
+}
+
+
+/* Address Screen
+ * -------------- */
+
+.address
+{
+    width: 210px;
+}
+
+.city
+{
+    width: 140px;
+}
+
+.state
+{
+    width: 20px;
+}
+
+.zip
+{
+    width: 40px;
+}
+
+/* Order Page
+ * ---------- */
+
+.accordion {
+    width: 800px;
+    margin: 0 auto;
+    border-radius:3px;
+}
+        
+.accordionHeader {
+    border-radius:3px;
+    border: 1px solid #2F4F4F;
+    color: white;
+    background: url('images/bg-header.jpg') repeat-x center 0;
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+        }
+        
+.accordionHeaderSelected {
+    border-radius:3px;
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-image: url("images/bg-accordion.png");
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+        
+.accordionContent {
+    border-radius:3px;
+    border: 1px solid #2F4F4F;
+    background-color: #D3DEEF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.tableFirstColumn {
+    text-align:left;
+    width:160px;
+}
+
+.tableSecondColumn {
+    width:200px;
+}
+
+.tableThirdColumn {
+     text-align:left;
+     width:150px;
+}
+
+.tableFourthColumn {
+    width:250px;
+}
+
+table.accordionBorder { 
+    border-collapse:collapse; 
+}
+
+table.accordionBorder td, table.bottomBorder th { 
+    border-bottom:1px solid black;
+    padding:5px; 
+}
+
+.red {
+    color:red;
+}
+
+.textbox {
+    border-radius:5px;
+}
+
+.dropdown {
+    border-radius:3px;
+}
+
+.submitButton {
+    border-radius:3px;
+}
+
+/* Login Page
+    */
+
