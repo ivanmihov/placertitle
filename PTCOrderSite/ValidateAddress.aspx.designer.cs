@@ -13,13 +13,13 @@ namespace PTCOrderSite {
     public partial class ValidateAddress {
         
         /// <summary>
-        /// tblSearchResults control.
+        /// rdbtnlstAddresses control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tblSearchResults;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdbtnlstAddresses;
         
         /// <summary>
         /// cmdContinue control.

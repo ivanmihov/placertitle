@@ -1,0 +1,250 @@
+﻿/* Text Styles
+ * ----------- */
+
+a, a:visited {
+  color: #2dbfff;
+}
+a:hover, a:active {
+  color: #2dbfff;
+}
+
+h1
+{
+    border-bottom: 2px solid black;
+    padding: 50px 20px 0px 20px;
+}
+
+h3 {
+  color: #003082;
+}
+h4 {
+  color: #000000;
+}
+h5 {
+  color: #F9B600;
+  text-shadow: 1px 1px 0 #555555;
+  text-transform: uppercase;
+}
+h6 {
+  color: #000000;
+}
+
+/* Master page layout elements
+ * --------------------------- */
+body
+{
+    font-family: Calibri, Arial, Sans-Serif;
+    font-size: 1em;
+    background: #00070E url('images/bg-body.jpg') repeat-x center 138px;
+    margin: 0px;
+}
+
+.header 
+{
+    background: url('images/bg-header.jpg') repeat-x center 0;
+    width: 1700px;
+    height: 138px;
+}
+
+.logo
+{
+    width: 980px;
+    margin: -133px auto 0px auto;
+}
+
+.main
+{
+    margin: 0px auto;
+    width: 938px;
+    min-height: 450px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.menu_wrapper
+{
+    background-image: url("images/bg-menu-wrapper.png");
+    background-repeat: repeat-x;
+    height: 25px;
+    width: 100%;
+}
+
+/* General Layout/Coloring
+ * ----------------------- */
+.loginTextbox {
+        text-align:center;
+
+}
+
+.rememberUser {
+    color:white;
+}
+
+.formBox
+{
+<<<<<<< HEAD
+    text-align:left;
+    /*background-color: #EEFAFF;*/
+    background: url('images/bg-login.png') repeat-x center 0;
+    border: 1px solid black;
+=======
+    background-color: #EEFAFF;
+    border: 1px solid #2F4F4F;
+>>>>>>> 474ddef13c0e3e6aacac05a681f5eacded8c1032
+    padding: 10px;
+    margin: 100px auto 0px auto;
+}
+
+.formElement
+{
+    width: 250px;
+    margin-left: 50px;
+}
+
+.formLabel
+{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.formSubmit
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.narrowForm
+{
+    width: 300px;
+    border-radius: 5px;
+}
+
+.mediumForm
+{
+    width: 500px;
+}
+
+.wideForm
+{
+    width: 700px;
+}
+
+
+/* Address Screen
+ * -------------- */
+
+.address
+{
+    width: 210px;
+}
+
+.city
+{
+    width: 140px;
+}
+
+.state
+{
+    width: 20px;
+}
+
+.zip
+{
+    width: 40px;
+}
+
+/* Order Page
+ * ---------- */
+
+.accordion {
+    width: 800px;
+    margin: 0 auto;
+    border-radius:3px;
+}
+        
+.accordionHeader {
+    border-radius:3px;
+    border: 1px solid #2F4F4F;
+    color: white;
+    background: url('images/bg-header.jpg') repeat-x center 0;
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+        }
+        
+.accordionHeaderSelected {
+    border-radius:3px;
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-image: url("images/bg-accordion.png");
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+        
+.accordionContent {
+<<<<<<< HEAD
+    border-radius:3px;
+    background-color: #D3DEEF;
+    border: 1px dashed #2F4F4F;
+=======
+    background-color: #EEFAFF;
+    border: 1px solid #2F4F4F;
+>>>>>>> 474ddef13c0e3e6aacac05a681f5eacded8c1032
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.tableFirstColumn {
+    text-align:left;
+    width:160px;
+}
+
+.tableSecondColumn {
+    width:200px;
+}
+
+.tableThirdColumn {
+     text-align:left;
+     width:150px;
+}
+
+.tableFourthColumn {
+    width:250px;
+}
+
+table.accordionBorder { 
+    border-collapse:collapse; 
+}
+
+table.accordionBorder td, table.bottomBorder th { 
+    border-bottom:1px solid black;
+    padding:5px; 
+}
+
+.red {
+    color:red;
+}
+
+.textbox {
+    border-radius:5px;
+}
+
+.dropdown {
+    border-radius:3px;
+}
+
+.submitButton {
+    border-radius:3px;
+}
+
+/* Login Page
+    */
+
