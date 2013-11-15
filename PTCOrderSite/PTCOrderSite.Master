@@ -1,24 +1,31 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PTCOrderSite.Master.cs" Inherits="PTCOrderSite.PTCOrderSiteMaster" %>
+﻿  <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PTCOrderSite.Master.cs" Inherits="PTCOrderSite.PTCOrderSiteMaster" %> 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
 <head runat="server">
     <link type="text/css" rel="Stylesheet" href="styles.css" />
     <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+   <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder> 
 </head>
 <body>
-    <div class="header"></div>
-    <div class="logo"><img src="images/logo.png" alt="Placer Title Company" /></div>
-    <div class="menu_wrapper"></div>
+    <div class="container" align="center">
+    <div class="header">   
+    <div class="logo" align="left"><img src="images/logo.png" alt="Placer Title Company" /></div>
+    <div class="menu_wrapper"><nav id="nav"><ul id="tabs"><li><a class="current" href="#" ><span>Home</span></a></li><li><a href="#"><span>Client Services</span></a></li>
+    <li><a href="#"><span>Title / Escrow</span></a></li><li><a href="#"><span>About PTC</span></a></li><li><a href="#"><span>Contact Us</span></a></li><li><a href="#"><span>Quick Links</span></a></li></ul></nav></div>
+    
+    </div> 
+    <div>
     <form id="frmMain" runat="server">
     <div class="main">
-        <asp:ContentPlaceHolder ID="body" runat="server">
-        
-        </asp:ContentPlaceHolder>
+   <asp:ContentPlaceHolder ID="body" runat="server">
+       
+              
+        </asp:ContentPlaceHolder> 
     </div>
     </form>
+    </div>
+   </div>
 </body>
 </html>
