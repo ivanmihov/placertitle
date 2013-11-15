@@ -11,12 +11,17 @@ namespace PTCOrderSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // Put cursor in username prompt
+            txtUsername.Focus();
         }
 
         protected void cmdSubmit_Click(object sender, EventArgs e)
         {
-            Response.Redirect("MainMenu.aspx");
+            // Store username in the session
+            Session["username"] = txtUsername.Text;
+
+            // Go to main menu
+            Response.Redirect("~/MainMenu.aspx");
         }
     }
 }
