@@ -9,6 +9,7 @@
     <ul>
         <li><asp:HyperLink ID="HyperLink1" runat="server" Text="Home" NavigateUrl="~/MainMenu.aspx"></asp:HyperLink></li>
         <li><asp:HyperLink ID="HyperLink2" runat="server" Text="Log Out" NavigateUrl="~/Login.aspx"></asp:HyperLink></li>
+        <!--comment-->
     </ul>
 </div>
 </asp:Content>
