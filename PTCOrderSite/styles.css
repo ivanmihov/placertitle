@@ -29,9 +29,9 @@ h6 {
   color: #000000;
 }
 
-input
+input 
 {
-    border-radius: 5px;
+  border-radius: 7px;
 }
 
 /* Master page layout elements
@@ -77,14 +77,30 @@ body
 /* Login Page */
 
 .loginFormBox {
-        background: url('images/bg-login.png') repeat-x center 0;
+    background: url('images/bg-login.png') repeat-x center 0;
+    height: 190px;
 }
+
+.forgotCredentials {
+    text-align:left;
+    color:#047fa2;
+    margin-top: 15px;
+}
+
+.requestId {
+    text-align:left;
+    color:#047fa2;
+    margin-top: 10px;
+}
+
+.loginTextbox {
+    text-align: center;
+    width: 210px;
+    height: 24px;
+}
+
 /* General Layout/Coloring
  * ----------------------- */
-.loginTextbox {
-        text-align:center;
-
-}
 
 .rememberUser {
     color:white;
@@ -92,12 +108,11 @@ body
 
 .formBox
 {
-    text-align:left;
     background-color: #EEFAFF;
     border: 1px solid black;
     padding: 10px;
     margin: 100px auto 0px auto;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .formElement
@@ -120,8 +135,7 @@ body
 
 .narrowForm
 {
-    width: 300px;
-    border-radius: 5px;
+    width: 250px;
 }
 
 .mediumForm
