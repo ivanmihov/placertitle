@@ -61,7 +61,7 @@ body
 {
     margin: 0px auto;
     width: 938px;
-    min-height: 450px;
+    min-height: 500px;
     background-color: white;
     border: 1px solid white;
 }
@@ -76,35 +76,85 @@ body
 
 /* Login Page */
 
+.loginInfo {
+    width:360px; 
+    margin:auto;
+    float: left;
+    margin-left: 78px;
+}
+
+#loginContainer {
+    width: 800px;
+    margin: auto;
+}
+
 .loginFormBox {
     background: url('images/bg-login.png') repeat-x center 0;
-    height: 190px;
+    height: 212px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width:340px;
+    float: left;
+    padding: 10px;
+    margin-top: 75px;
+}
+
+.rememberUser {
+    color:white;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.loginButton {
+    text-align: right;
+    margin-top: -25px;
+    margin-right: 26px;
 }
 
 .forgotCredentials {
     text-align:left;
     color:#047fa2;
     margin-top: 15px;
+    margin-left: 28px;
 }
 
 .requestId {
     text-align:left;
     color:#047fa2;
-    margin-top: 10px;
+    margin-left: 28px;
 }
 
 .loginTextbox {
-    text-align: center;
-    width: 210px;
-    height: 24px;
+    width: 280px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
+
+.loginTextbox:focus{
+    outline: none;
+    border-color: #999;
+}
+
+.loginTextbox::-webkit-input-placeholder{
+    color: #215884;
+    font-family: "Century Gothic", serif;
+    font-size:18px;
+    font-weight:500;
+}
+
+.loginTextbox[type=text] {
+    color: #215884;
+    font-family: "Century Gothic", serif;
+    font-size:18px;
+    font-weight:500;
+}
+
 
 /* General Layout/Coloring
  * ----------------------- */
-
-.rememberUser {
-    color:white;
-}
 
 .formBox
 {
@@ -135,7 +185,7 @@ body
 
 .narrowForm
 {
-    width: 250px;
+    width: 340px;
 }
 
 .mediumForm
@@ -259,7 +309,3 @@ table.accordionBorder td, table.bottomBorder th {
 .submitButton {
     border-radius:3px;
 }
-
-/* Login Page
-    */
-
