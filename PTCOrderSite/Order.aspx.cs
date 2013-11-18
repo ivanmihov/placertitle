@@ -15,7 +15,7 @@ namespace PTCOrderSite
             // Load transaction types
             if (transactionType.Items.Count == 0)
             {
-                foreach (XmlTools.XmlResult result in XmlTools.ReadXmlList(
+                foreach (MLHC_ListItem result in MLHC_XmlTools.ReadXmlList(
                     Request.PhysicalApplicationPath + "inputSamples\\TransactionTypes.xml", "TRANSACTION_TYPES"))
                 {
                     ListItem item = new ListItem(result.Description, result.Code);
