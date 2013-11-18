@@ -1,6 +1,14 @@
 ﻿/* Text Styles
  * ----------- */
 
+body
+{
+    font-family: Calibri, Arial, Sans-Serif;
+    font-size: 1em;
+    background: #00070E url('images/bg-body.jpg') repeat-x center 138px;
+    margin: 0px;
+}
+
 a, a:visited {
   color: #2dbfff;
 }
@@ -34,15 +42,53 @@ input
   border-radius: 7px;
 }
 
+/* General Layout/Coloring
+ * ----------------------- */
+
+.formBox
+{
+    background-color: #EEFAFF;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 100px auto 0px auto;
+    border-radius: 5px;
+}
+
+.formElement
+{
+    width: 250px;
+    margin-left: 50px;
+}
+
+.formLabel
+{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.formSubmit
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.narrowForm
+{
+    width: 340px;
+}
+
+.mediumForm
+{
+    width: 500px;
+}
+
+.wideForm
+{
+    width: 700px;
+}
+
 /* Master page layout elements
  * --------------------------- */
-body
-{
-    font-family: Calibri, Arial, Sans-Serif;
-    font-size: 1em;
-    background: #00070E url('images/bg-body.jpg') repeat-x center 138px;
-    margin: 0px;
-}
 
 .header 
 {
@@ -74,7 +120,8 @@ body
     width: 100%;
 }
 
-/* Login Page */
+/* Login Page
+ * ---------- */
 
 .loginInfo {
     width:360px; 
@@ -151,53 +198,6 @@ body
     font-size:18px;
     font-weight:500;
 }
-
-
-/* General Layout/Coloring
- * ----------------------- */
-
-.formBox
-{
-    background-color: #EEFAFF;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 100px auto 0px auto;
-    border-radius: 5px;
-}
-
-.formElement
-{
-    width: 250px;
-    margin-left: 50px;
-}
-
-.formLabel
-{
-    font-style: italic;
-    font-weight: bold;
-}
-
-.formSubmit
-{
-    margin-top: 10px;
-    text-align: center;
-}
-
-.narrowForm
-{
-    width: 340px;
-}
-
-.mediumForm
-{
-    width: 500px;
-}
-
-.wideForm
-{
-    width: 700px;
-}
-
 
 /* Address Screen
  * -------------- */
