@@ -118,6 +118,7 @@
     <Compile Include="Confirmation.aspx.designer.cs">
       <DependentUpon>Confirmation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="modules\XmlTools.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PTCOrderSite.Master.cs">
       <DependentUpon>PTCOrderSite.Master</DependentUpon>

@@ -45,6 +45,8 @@ namespace PTCOrderSite
                 }
             }
 
+            xmlFile.Close();
+
             // Add list item to results selection
             ListItem rdbtnSelection = new ListItem();
             rdbtnSelection.Text = rdbtnSelection.Value = String.Format("{0}, {1}, {2} {3}",
