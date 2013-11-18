@@ -24,11 +24,26 @@ namespace PTCOrderSite.modules
         public static List<XmlResult> ReadXmlList(string fileName, string nodeName)
         {
             var xmlValues = new List<XmlResult>();
+            XmlResult result; // store individual result to add to returned list
 
             // Open XML file and test output
             FileStream xmlFile = new FileStream(fileName, FileMode.Open);
             using (XmlReader xmlReader = XmlReader.Create(xmlFile))
             {
+                while (xmlReader.Read())
+                {
+                    result = new XmlResult();
+
+                    // Skip to first text node and read value into id
+                    while (xmlReader.Read() && xmlReader.NodeType != XmlNodeType.Text) ;
+                    result.Code = xmlReader.Value;
+
+                    // Skip to next text node and read value into description
+                    while (xmlReader.Read() && xmlReader.NodeType != XmlNodeType.Text) ;
+                    result.Description = xmlReader.Value;
+
+                    xmlValues.Add(result);
+                }
             }
 
             return xmlValues;
