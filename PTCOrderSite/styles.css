@@ -1,6 +1,14 @@
 ﻿/* Text Styles
  * ----------- */
 
+body
+{
+    font-family: Calibri, Arial, Sans-Serif;
+    font-size: 1em;
+    background: #00070E url('images/bg-body.jpg') repeat-x center 138px;
+    margin: 0px;
+}
+
 a, a:visited {
   color: #2dbfff;
 }
@@ -34,77 +42,8 @@ input
   border-radius: 7px;
 }
 
-/* Master page layout elements
- * --------------------------- */
-body
-{
-    font-family: Calibri, Arial, Sans-Serif;
-    font-size: 1em;
-    background: #00070E url('images/bg-body.jpg') repeat-x center 138px;
-    margin: 0px;
-}
-
-.header 
-{
-    background: url('images/bg-header.jpg') repeat-x center 0;
-    width: 1700px;
-    height: 138px;
-}
-
-.logo
-{
-    width: 980px;
-    margin: -133px auto 0px auto;
-}
-
-.main
-{
-    margin: 0px auto;
-    width: 938px;
-    min-height: 450px;
-    background-color: white;
-    border: 1px solid white;
-}
-
-.menu_wrapper
-{
-    background-image: url("images/bg-menu-wrapper.png");
-    background-repeat: repeat-x;
-    height: 25px;
-    width: 100%;
-}
-
-/* Login Page */
-
-.loginFormBox {
-    background: url('images/bg-login.png') repeat-x center 0;
-    height: 190px;
-}
-
-.forgotCredentials {
-    text-align:left;
-    color:#047fa2;
-    margin-top: 15px;
-}
-
-.requestId {
-    text-align:left;
-    color:#047fa2;
-    margin-top: 10px;
-}
-
-.loginTextbox {
-    text-align: center;
-    width: 210px;
-    height: 24px;
-}
-
 /* General Layout/Coloring
  * ----------------------- */
-
-.rememberUser {
-    color:white;
-}
 
 .formBox
 {
@@ -135,7 +74,7 @@ body
 
 .narrowForm
 {
-    width: 250px;
+    width: 340px;
 }
 
 .mediumForm
@@ -148,6 +87,117 @@ body
     width: 700px;
 }
 
+/* Master page layout elements
+ * --------------------------- */
+
+.header 
+{
+    background: url('images/bg-header.jpg') repeat-x center 0;
+    width: 1700px;
+    height: 138px;
+}
+
+.logo
+{
+    width: 980px;
+    margin: -133px auto 0px auto;
+}
+
+.main
+{
+    margin: 0px auto;
+    width: 938px;
+    min-height: 500px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.menu_wrapper
+{
+    background-image: url("images/bg-menu-wrapper.png");
+    background-repeat: repeat-x;
+    height: 25px;
+    width: 100%;
+}
+
+/* Login Page
+ * ---------- */
+
+.loginInfo {
+    width:360px; 
+    margin:auto;
+    float: left;
+    margin-left: 78px;
+}
+
+#loginContainer {
+    width: 800px;
+    margin: auto;
+}
+
+.loginFormBox {
+    background: url('images/bg-login.png') repeat-x center 0;
+    height: 212px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width:340px;
+    float: left;
+    padding: 10px;
+    margin-top: 75px;
+}
+
+.rememberUser {
+    color:white;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.loginButton {
+    text-align: right;
+    margin-top: -25px;
+    margin-right: 26px;
+}
+
+.forgotCredentials {
+    text-align:left;
+    color:#047fa2;
+    margin-top: 15px;
+    margin-left: 28px;
+}
+
+.requestId {
+    text-align:left;
+    color:#047fa2;
+    margin-left: 28px;
+}
+
+.loginTextbox {
+    width: 280px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.loginTextbox:focus{
+    outline: none;
+    border-color: #999;
+}
+
+.loginTextbox::-webkit-input-placeholder{
+    color: #215884;
+    font-family: "Century Gothic", serif;
+    font-size:18px;
+    font-weight:500;
+}
+
+.loginTextbox[type=text] {
+    color: #215884;
+    font-family: "Century Gothic", serif;
+    font-size:18px;
+    font-weight:500;
+}
 
 /* Address Screen
  * -------------- */
@@ -259,7 +309,3 @@ table.accordionBorder td, table.bottomBorder th {
 .submitButton {
     border-radius:3px;
 }
-
-/* Login Page
-    */
-
