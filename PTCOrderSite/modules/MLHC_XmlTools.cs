@@ -21,32 +21,37 @@ namespace PTCOrderSite.modules
         /// <summary>
         /// Used for reading a list of possible values that a user can select from in a drop-down box.
         /// The xml format should have a collection of nodes with two sub-nodes each (code and description)
+        /// This proceedure assumes that there are always two sub-nodes. The first is the ID and the second
+        /// is the description.
         /// </summary>
         /// <param name="fileName">Relative path to the xml file</param>
-        /// <param name="nodeName">Name of the parent node that contains the two sub-nodes with code and description</param>
         /// <returns>Collection of results (Code & Description)</returns>
-        public static List<MLHC_ListItem> ReadXmlList(string fileName, string nodeName)
+        public static List<MLHC_ListItem> ReadXmlList(string strFileName)
         {
             var xmlValues = new List<MLHC_ListItem>();
             MLHC_ListItem result; // store individual result to add to returned list
 
             // Open XML file and test output
-            FileStream xmlFile = new FileStream(fileName, FileMode.Open);
+            FileStream xmlFile = new FileStream(strFileName, FileMode.Open);
             using (XmlReader xmlReader = XmlReader.Create(xmlFile))
             {
                 while (xmlReader.Read())
                 {
-                    result = new MLHC_ListItem();
+                    // If in a start node
+                    if (xmlReader.NodeType == XmlNodeType.Element)
+                    {
+                        result = new MLHC_ListItem();
 
-                    // Skip to first text node and read value into id
-                    while (xmlReader.Read() && xmlReader.NodeType != XmlNodeType.Text) ;
-                    result.Code = xmlReader.Value;
+                        // Skip to first text node and read value into id
+                        while (xmlReader.Read() && xmlReader.NodeType != XmlNodeType.Text) ;
+                        result.Code = xmlReader.Value;
 
-                    // Skip to next text node and read value into description
-                    while (xmlReader.Read() && xmlReader.NodeType != XmlNodeType.Text) ;
-                    result.Description = xmlReader.Value;
+                        // Skip to next text node and read value into description
+                        while (xmlReader.Read() && xmlReader.NodeType != XmlNodeType.Text) ;
+                        result.Description = xmlReader.Value;
 
-                    xmlValues.Add(result);
+                        xmlValues.Add(result);
+                    }
                 }
             }
 
