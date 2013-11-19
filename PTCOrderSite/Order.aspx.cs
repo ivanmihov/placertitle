@@ -13,11 +13,14 @@ namespace PTCOrderSite
         protected void Page_Load(object sender, EventArgs e)
         {
             // Load transaction types
-            foreach (XmlTools.XmlResult result in XmlTools.ReadXmlList(
-                Request.PhysicalApplicationPath + "inputSamples\\TransactionTypes.xml", "TRANSACTION_TYPES"))
+            if (transactionType.Items.Count == 0)
             {
-                ListItem item = new ListItem(result.Description, result.Code);
-                transactionType.Items.Add(item);
+                foreach (MLHC_ListItem result in MLHC_XmlTools.ReadXmlList(
+                    Request.PhysicalApplicationPath + "inputSamples\\TransactionTypes.xml", "TRANSACTION_TYPES"))
+                {
+                    ListItem item = new ListItem(result.Description, result.Code);
+                    transactionType.Items.Add(item);
+                }
             }
         }
 
