@@ -54,7 +54,7 @@ namespace PTCOrderSite.modules
                     }
                 }
             }
-
+            xmlFile.Close();
             return xmlValues;
         }
     }
