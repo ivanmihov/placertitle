@@ -24,7 +24,7 @@ namespace PTCOrderSite.modules
         /// This proceedure assumes that there are always two sub-nodes. The first is the ID and the second
         /// is the description.
         /// </summary>
-        /// <param name="fileName">Relative path to the xml file</param>
+        /// <param name="fileName">Absoulute path to the xml file</param>
         /// <returns>Collection of results (Code & Description)</returns>
         public static List<MLHC_ListItem> ReadXmlList(string strFileName)
         {
