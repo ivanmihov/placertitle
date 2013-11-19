@@ -37,36 +37,143 @@ body
     font-size: 1em;
     background: #00070E url('images/bg-body.jpg') repeat-x center 138px;
     margin: 0px;
+   
 }
 
 .header 
 {
     background: url('images/bg-header.jpg') repeat-x center 0;
     width: 1700px;
-    height: 138px;
+    height: 138px;    
 }
 
 .logo
 {
     width: 980px;
-    margin: -133px auto 0px auto;
+    margin: -133px auto 0px auto;    
+    height: 138px;
 }
 
 .main
 {
     margin: 0px auto;
-    width: 938px;
+    width: 957px;
     min-height: 450px;
     background-color: white;
     border: 1px solid white;
 }
 
 .menu_wrapper
-{
-    background-image: url("images/bg-menu-wrapper.png");
+{   
+    padding-top: 25px;
+    position: relative;
+    width: auto;
+    height: auto;
+    
+    background: url("/images/bg-menu-wrapper.png") repeat-x scroll 0px 0px transparent;
+    background-color: transparent;
+    background-image: url("/images/bg-menu-wrapper.png");
     background-repeat: repeat-x;
-    height: 25px;
-    width: 100%;
+    background-attachment: scroll;
+    background-position: 0px 0px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+}
+#form_wrapper
+{
+    }
+
+
+#zone-menu 
+{
+    background: linear-gradient(to bottom, rgb(0, 33, 63) 0%, rgb(0, 51, 100) 100%) repeat scroll 0% 0% rgb(0, 33, 63);
+    background-color: rgb(0, 33, 63);
+    background-image: linear-gradient(to bottom, rgb(0, 33, 63) 0%, rgb(0, 51, 100) 100%);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    margin-top: -16px;
+    }
+
+#zone-menu ul  {
+    overflow: hidden; 
+    width: 70%;
+    height: auto;
+    }
+#zone-menu ul li  
+{
+    float:left;
+    margin-right:35px;
+    list-style-type:none;
+    display:block;
+    }    
+#zone-menu ul li a 
+{
+    font: bold 18px/46px "Lato","Trebuchet MS", Arial, Helvetica, sans-serif;
+    display: block;
+    height: auto;
+    border-bottom: 5px solid #143157;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#0f6fb2', EndColorStr='#224170');
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    margin-left: 30px;
+}
+    
+    
+#content 
+{
+    width:960px;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: #2DBFFF;
+    margin-top: -5px;
+    }   
+
+    
+ #footer 
+ {
+     background-image: url("/images/footer_background.png");
+     background-repeat: repeat;
+     height: 300px;
+     width: 960px;
+     }   
+    
+    
+    
+    
+    
+#shadow-left {
+    background-position: -202px 0px;
+    left: 0px;
+    display:block;
+    float:left;
+}
+#shadow-right {
+    right: 0px;
+}
+#shadow-left, #shadow-right {
+    background: url("/sites/all/themes/mlhc/images/bg-sidefade.png") repeat-y scroll 0px 0px transparent;
+        background-color: transparent;
+        background-image: url("/sites/all/themes/mlhc/images/bg-sidefade.png");
+        background-repeat: repeat-y;
+        background-attachment: scroll;
+        background-position: 0px 0px;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-size: auto auto;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    width: 202px;
+    z-index: 499;
 }
 
 /* Login Page */

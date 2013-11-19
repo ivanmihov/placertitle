@@ -9,16 +9,23 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body>       
     <div class="header"></div>
     <div class="logo"><img src="images/logo.png" alt="Placer Title Company" /></div>
-    <div class="menu_wrapper"></div>
-    <form id="frmMain" runat="server">
-    <div class="main">
-        <asp:ContentPlaceHolder ID="body" runat="server">
+
+    <div id="content">
+
+        <div class="menu_wrapper"><div id="zone-menu"><ul>
+          <li><a href="MainMenu.aspx">HOME</a></li><li><a href="#">CONTACT</a></li><li><a href="EnterAddress.aspx">ACCOUNT MENU</a></li><li><a href="Login.aspx">LOGOUT</a></li>
+        </ul></div></div>
+        <form id="frmMain" runat="server">
+            <div class="main">
+                <asp:ContentPlaceHolder ID="body" runat="server">
         
-        </asp:ContentPlaceHolder>
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+     <div id="footer"><img src="images/footer.png" /></div>   
     </div>
-    </form>
 </body>
 </html>
