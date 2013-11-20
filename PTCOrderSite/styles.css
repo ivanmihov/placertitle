@@ -303,7 +303,7 @@ input
     font-weight:500;
 }
 
-.loginTextbox[type=text] {
+.loginTextbox[type=text], .loginTextbox[type=password] {
     color: #215884;
     font-family: "Century Gothic", serif;
     font-size:18px;

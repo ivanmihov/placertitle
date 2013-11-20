@@ -15,9 +15,15 @@
 
     <div id="content">
 
-        <div class="menu_wrapper"><div id="zone-menu"><ul>
-          <li><a href="MainMenu.aspx">HOME</a></li><li><a href="#">CONTACT</a></li><li><a href="EnterAddress.aspx">ACCOUNT MENU</a></li><li><a href="Login.aspx">LOGOUT</a></li>
-        </ul></div></div>
+        <div class="menu_wrapper"></div>
+        <div id="zone-menu">
+            <ul>
+                <li><a href="MainMenu.aspx">HOME</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="EnterAddress.aspx">ACCOUNT MENU</a></li>
+                <li><a href="Login.aspx">LOGOUT</a></li>
+            </ul>
+        </div>
         <form id="frmMain" runat="server">
             <div class="main">
                 <asp:ContentPlaceHolder ID="body" runat="server">

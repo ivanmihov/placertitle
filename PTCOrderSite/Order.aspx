@@ -4,7 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-<asp:HiddenField ID="hdnLoadedDropDownValues" runat="server" Value="false" />
+    <asp:HiddenField ID="hdnLoadedDropDownValues" runat="server" Value="false" />
 
 <h1>Place Order</h1>
 
