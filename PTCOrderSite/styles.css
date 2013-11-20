@@ -108,7 +108,7 @@ input
 {
     margin: 0px auto;
     width: 957px;
-    min-height: 450px;
+    min-height: 500px;
     background-color: white;
     border: 1px solid white;
 }
@@ -156,6 +156,7 @@ input
     overflow: hidden; 
     width: 70%;
     height: auto;
+    margin-bottom: 0px;
     }
 #zone-menu ul li  
 {

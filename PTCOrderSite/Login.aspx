@@ -6,16 +6,16 @@
 <h1>Please Login</h1>
 <div id="loginContainer">
     <div class="loginFormBox">
-    <div style="text-align:center; margin-top:20px"><asp:TextBox runat="server" ID="txtUsername" placeholder="Username" CssClass="loginTextbox"></asp:TextBox></div>
-    <br />
-    <div style="text-align:center"><asp:TextBox runat="server" ID="txtPassword" placeholder="Password" CssClass="loginTextbox" TextMode="Password"></asp:TextBox></div>
-    <div class="rememberUser"><asp:CheckBox runat="server" ID="rememberLogin" Text="Remember Username"/></div>
-    <div class="loginButton">
-        <asp:ImageButton src="images/login-btn.png" runat="server" Text="Login" AlternateText="Button" onclick="cmdSubmit_Click"/>
+        <div style="text-align:center; margin-top:20px"><asp:TextBox runat="server" ID="txtUsername" placeholder="Username" CssClass="loginTextbox"></asp:TextBox></div>
+        <br />
+        <div style="text-align:center"><asp:TextBox runat="server" ID="txtPassword" placeholder="Password" CssClass="loginTextbox" TextMode="Password"></asp:TextBox></div>
+        <div class="rememberUser"><asp:CheckBox runat="server" ID="rememberLogin" Text="Remember Username"/></div>
+        <div class="loginButton">
+            <asp:ImageButton src="images/login-btn.png" runat="server" Text="Login" AlternateText="Button" onclick="cmdSubmit_Click"/>
+        </div>
+        <div class="forgotCredentials">Forgot Username or Password?</div>
+        <div class="requestId">Request Username</div>
     </div>
-    <div class="forgotCredentials">Forgot Username or Password?</div>
-    <div class="requestId">Request Username</div>
-</div>
     <div class="loginInfo"><br />
         <p style="text-align:center; color:#047fa2;"><strong>Need an account?</strong></p>
         <p>    
@@ -31,6 +31,6 @@
             Favorites or Bookmark this page.
         </p>
 
-</div>
+    </div>
 </div>
 </asp:Content>
