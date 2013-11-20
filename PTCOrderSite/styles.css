@@ -1,6 +1,14 @@
 ﻿/* Text Styles
  * ----------- */
 
+body
+{
+    font-family: Calibri, Arial, Sans-Serif;
+    font-size: 1em;
+    background: #00070E url('images/bg-body.jpg') repeat-x center 138px;
+    margin: 0px;
+}
+
 a, a:visited {
   color: #2dbfff;
 }
@@ -29,28 +37,70 @@ h6 {
   color: #000000;
 }
 
+input 
+{
+  border-radius: 7px;
+}
+
+/* General Layout/Coloring
+ * ----------------------- */
+
+.formBox
+{
+    background-color: #EEFAFF;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 100px auto 0px auto;
+    border-radius: 5px;
+}
+
+.formElement
+{
+    width: 250px;
+    margin-left: 50px;
+}
+
+.formLabel
+{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.formSubmit
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.narrowForm
+{
+    width: 340px;
+}
+
+.mediumForm
+{
+    width: 500px;
+}
+
+.wideForm
+{
+    width: 700px;
+}
+
 /* Master page layout elements
  * --------------------------- */
-body
-{
-    font-family: Calibri, Arial, Sans-Serif;
-    font-size: 1em;
-    background: #00070E url('images/bg-body.jpg') repeat-x center 138px;
-    margin: 0px;
-   
-}
 
 .header 
 {
     background: url('images/bg-header.jpg') repeat-x center 0;
     width: 1700px;
-    height: 138px;    
+    height: 138px;
 }
 
 .logo
 {
     width: 980px;
-    margin: -133px auto 0px auto;    
+    margin: -133px auto 0px auto;
     height: 138px;
 }
 
@@ -62,6 +112,9 @@ body
     background-color: white;
     border: 1px solid white;
 }
+
+/* Menus
+ * ----- */
 
 .menu_wrapper
 {   
@@ -176,65 +229,85 @@ body
     z-index: 499;
 }
 
-/* Login Page */
+
+/* Login Page
+ * ---------- */
+
+.loginInfo {
+    width:360px; 
+    margin:auto;
+    float: left;
+    margin-left: 78px;
+}
+
+#loginContainer {
+    width: 800px;
+    margin: auto;
+}
 
 .loginFormBox {
-        background: url('images/bg-login.png') repeat-x center 0;
-}
-/* General Layout/Coloring
- * ----------------------- */
-.loginTextbox {
-        text-align:center;
-
+    background: url('images/bg-login.png') repeat-x center 0;
+    height: 212px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width:340px;
+    float: left;
+    padding: 10px;
+    margin-top: 75px;
 }
 
 .rememberUser {
     color:white;
+    margin-top: 20px;
+    margin-left: 25px;
 }
 
-.formBox
-{
+.loginButton {
+    text-align: right;
+    margin-top: -25px;
+    margin-right: 26px;
+}
+
+.forgotCredentials {
     text-align:left;
-    background-color: #EEFAFF;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 100px auto 0px auto;
+    color:#047fa2;
+    margin-top: 15px;
+    margin-left: 28px;
 }
 
-.formElement
-{
-    width: 250px;
-    margin-left: 50px;
+.requestId {
+    text-align:left;
+    color:#047fa2;
+    margin-left: 28px;
 }
 
-.formLabel
-{
-    font-style: italic;
-    font-weight: bold;
-}
-
-.formSubmit
-{
-    margin-top: 10px;
-    text-align: center;
-}
-
-.narrowForm
-{
-    width: 300px;
+.loginTextbox {
+    width: 280px;
+    height: 30px;
+    padding-left: 10px;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-.mediumForm
-{
-    width: 500px;
+.loginTextbox:focus{
+    outline: none;
+    border-color: #999;
 }
 
-.wideForm
-{
-    width: 700px;
+.loginTextbox::-webkit-input-placeholder{
+    color: #215884;
+    font-family: "Century Gothic", serif;
+    font-size:18px;
+    font-weight:500;
 }
 
+.loginTextbox[type=text] {
+    color: #215884;
+    font-family: "Century Gothic", serif;
+    font-size:18px;
+    font-weight:500;
+}
 
 /* Address Screen
  * -------------- */
@@ -346,7 +419,3 @@ table.accordionBorder td, table.bottomBorder th {
 .submitButton {
     border-radius:3px;
 }
-
-/* Login Page
-    */
-

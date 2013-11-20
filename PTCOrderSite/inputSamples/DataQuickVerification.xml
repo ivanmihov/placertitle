@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<RESPONSE_GROUP>
+  <RESPONDING_PARTY _Name='DataQuick Information Systems' _StreetAddress='9620 Towne Centre Drive' _City='San Diego' _State='CA' _PostalCode='92121'/>
+  <RESPONSE ResponseDateTime="2013-09-23T10:10:08">
+    <KEY _Name='DQTransactionId' _Value='5d228e83-44a9-42a5-8f04-4f387e73436e'/>
+    <RESPONSE_DATA>
+      <PROPERTY_INFORMATION_RESPONSE_ext>
+        <_MATCH_ext _Type="Exact" Count="1">
+          <PROPERTY >
+            <_ADDRESS_ext _Type="Site" _StreetAddress="3265 VILLAGE CENTER DR" _City="ROSEVILLE" _State="CA" _PostalCode="95747" _PlusFourPostalCode="9014" />
+            <_ADDRESS_ext _Type="Mail" _StreetAddress="3265 VILLAGE CENTER DR" _City="ROSEVILLE" _State="CA" _PostalCode="95747" _PlusFourPostalCode="9014" />
+            <_IDENTIFICATION AssessorsParcelIdentifier="490-240-046-000" CountyFIPSCode="061" MunicipalityName="PLACER" StateFIPSCode="06" DQPropertyID_ext="122798127" DQGeoID_ext="123135"/>
+            <_OWNER _Type_ext="Primary" _Name="SCHRAM,JAMES H" >
+            <_PARSED_NAME_ext _FirstName="JAMES" _MiddleInitial="H" _LastName="SCHRAM" />
+            <_SPOUSE_ext>
+            <_PARSED_NAME_ext _FirstName="" _MiddleInitial="" />
+            </_SPOUSE_ext>
+            </_OWNER>
+            <_OWNER _Type_ext="Secondary" _Name="WALTON,CAROLE J" >
+            <_PARSED_NAME_ext _FirstName="CAROLE" _MiddleInitial="J" _LastName="WALTON" />
+            <_SPOUSE_ext>
+            <_PARSED_NAME_ext _FirstName="" _MiddleInitial="" />
+            </_SPOUSE_ext>
+            </_OWNER>
+          </PROPERTY>
+        </_MATCH_ext>
+      </PROPERTY_INFORMATION_RESPONSE_ext>
+    </RESPONSE_DATA>
+    <STATUS _Code="0" _Condition="Success" _Name="Success" _Description="Successful Execution" />
+      <_PRODUCT>
+        <_NAME _Identifier="" />
+      </_PRODUCT>
+  </RESPONSE>
+</RESPONSE_GROUP>
+

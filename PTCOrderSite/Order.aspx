@@ -4,6 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
+<asp:HiddenField ID="hdnLoadedDropDownValues" runat="server" Value="false" />
 
 <h1>Place Order</h1>
 
@@ -49,12 +50,6 @@
                     <td class="tableFirstColumn">Transaction Type<span class="red">*</span></td>
                     <td class="tableSecondColumn">
                         <asp:DropDownList id="transactionType" AutoPostBack="True" runat="server" CssClass="dropdown">
-                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                        <asp:ListItem Value="White"> White </asp:ListItem>
-                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                         </asp:DropDownList>
                     </td>
                     <td class="tableThirdColumn"></td>
@@ -82,12 +77,6 @@
                     <td class="tableThirdColumn">Escrow Officer<span class="red">*</span></td>
                     <td class="tableFourthColumn">
                         <asp:DropDownList id="escrowOfficer" AutoPostBack="True" runat="server" CssClass="dropdown">
-                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                        <asp:ListItem Value="White"> White </asp:ListItem>
-                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                         </asp:DropDownList>
                     </td>
                 </tr>
@@ -95,12 +84,6 @@
                     <td class="tableFirstColumn">Policy Type</td>
                     <td class="tableSecondColumn">
                         <asp:DropDownList id="policyType" AutoPostBack="True" runat="server" CssClass="dropdown">
-                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                        <asp:ListItem Value="White"> White </asp:ListItem>
-                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                         </asp:DropDownList>
                     </td>
                     <td class="tableThirdColumn">Est. Closing Date<span class="red">*</span></td>

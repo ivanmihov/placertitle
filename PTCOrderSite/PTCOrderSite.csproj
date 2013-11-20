@@ -75,7 +75,29 @@
     <Content Include="images\bg-body.jpg" />
     <Content Include="images\bg-header.jpg" />
     <Content Include="images\bg-menu-wrapper.png" />
+    <Content Include="images\login-btn.png" />
     <Content Include="images\logo.png" />
+    <Content Include="inputSamples\CityTransferTax.xml" />
+    <Content Include="inputSamples\DataQuickVerification.xml" />
+    <Content Include="inputSamples\Delivery.xml" />
+    <Content Include="inputSamples\EscrowOfficers.xml" />
+    <Content Include="inputSamples\EscrowPremium.xml" />
+    <Content Include="inputSamples\HazardDisclosure.xml" />
+    <Content Include="inputSamples\HazardPtcYN.xml" />
+    <Content Include="inputSamples\HoaTransferFee.xml" />
+    <Content Include="inputSamples\HomeWarranty.xml" />
+    <Content Include="inputSamples\OwnerPremium.xml" />
+    <Content Include="inputSamples\Products.xml" />
+    <Content Include="inputSamples\RoofReport.xml" />
+    <Content Include="inputSamples\TermiteReport.xml" />
+    <Content Include="inputSamples\TermiteWork.xml" />
+    <Content Include="inputSamples\TransactionTypes.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="inputSamples\TransferTax.xml" />
+    <Content Include="inputSamples\UserLogin.xml" />
+    <Content Include="outputSamples\RefiOrderIn.xml" />
+    <Content Include="outputSamples\SalesOrderIn.xml" />
     <Content Include="styles.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -98,6 +120,7 @@
     <Compile Include="Confirmation.aspx.designer.cs">
       <DependentUpon>Confirmation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="modules\MLHC_XmlTools.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PTCOrderSite.Master.cs">
       <DependentUpon>PTCOrderSite.Master</DependentUpon>

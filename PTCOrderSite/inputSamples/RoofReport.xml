@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ROOT>
+  <ERROR>0</ERROR>
+  <USERDATA>
+    <ROOF_PD>
+      <SETCODE>S</SETCODE>
+      <DESCRIPTION>Seller</DESCRIPTION>
+    </ROOF_PD>
+    <ROOF_PD>
+      <SETCODE>B</SETCODE>
+      <DESCRIPTION>Buyer</DESCRIPTION>
+    </ROOF_PD>
+    <ROOF_PD>
+      <SETCODE>50</SETCODE>
+      <DESCRIPTION>50%2F50</DESCRIPTION>
+    </ROOF_PD>
+    <ROOF_PD>
+      <SETCODE>W</SETCODE>
+      <DESCRIPTION>Waived</DESCRIPTION>
+    </ROOF_PD>
+  </USERDATA>
+</ROOT>
