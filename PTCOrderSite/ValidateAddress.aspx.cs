@@ -7,12 +7,17 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
 
+using PTCOrderSite.modules;
+
 namespace PTCOrderSite
 {
     public partial class ValidateAddress : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Use DataQuickResponse object
+            DataQuickResponse dqResponse = new DataQuickResponse(
+                Request.Form["ctl00$body$txtAddress"], Request.Form["ctl00$body$txtZip"]);
             // Open XML file and test output
             FileStream xmlFile = new FileStream(Request.PhysicalApplicationPath + "inputSamples\\DataQuickVerification.xml", FileMode.Open);
             using (XmlReader xmlReader = XmlReader.Create(xmlFile))
