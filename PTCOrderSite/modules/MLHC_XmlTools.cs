@@ -33,8 +33,10 @@ namespace PTCOrderSite.modules
 
             // Open XML file and test output
             FileStream xmlFile = new FileStream(strFileName, FileMode.Open);
+
             using (XmlReader xmlReader = XmlReader.Create(xmlFile))
             {
+                xmlReader.Settings.IgnoreWhitespace = true;
                 while (xmlReader.Read())
                 {
                     // If in a start node

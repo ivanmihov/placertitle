@@ -18,57 +18,18 @@ namespace PTCOrderSite
             // Use DataQuickResponse object
             DataQuickResponse dqResponse = new DataQuickResponse(
                 Request.Form["ctl00$body$txtAddress"], Request.Form["ctl00$body$txtZip"]);
-            // Open XML file and test output
-            FileStream xmlFile = new FileStream(Request.PhysicalApplicationPath + "inputSamples\\DataQuickVerification.xml", FileMode.Open);
-            using (XmlReader xmlReader = XmlReader.Create(xmlFile))
+
+            while (dqResponse.Read())
             {
-                while (xmlReader.Read())
-                {
-                    switch (xmlReader.NodeType)
-                    {
-                        case XmlNodeType.Element:
-                            txtXmlOutput.InnerText += String.Format("Start Element {0}\n", xmlReader.Name);
-                            for(int i = 0; i < xmlReader.AttributeCount; i++) {
-                                xmlReader.MoveToAttribute(i);
-                                txtXmlOutput.InnerText += String.Format("\tAttribute {0} with value {1}\n",
-                                    xmlReader.Name, xmlReader.Value);
-                            }
-                            break;
-                        case XmlNodeType.Text:
-                            txtXmlOutput.InnerText += String.Format("Text Node: {0}\n", xmlReader.Value);
-                            break;
-                        case XmlNodeType.EndElement:
-                            txtXmlOutput.InnerText += String.Format("End Element {0}\n", xmlReader.Name);
-                            break;
-                        case XmlNodeType.Whitespace:
-                            break;
-                        default:
-                            txtXmlOutput.InnerText += String.Format("Other node {0} with value {1}\n",
-                                xmlReader.NodeType, xmlReader.Value);
-                            break;
-                    }
-                }
+                // Add list item to results selection
+                ListItem rdbtnSelection = new ListItem();
+                rdbtnSelection.Text = rdbtnSelection.Value = String.Format("{0}, {1}, {2} {3}<br />{4} County<br />"
+                    + "APN: {5}<br />Owner 1: {6} {7}<br />Owner 2: {8} {9}",
+                    dqResponse.Address, dqResponse.City, dqResponse.State, dqResponse.Zip, dqResponse.County,
+                    dqResponse.APN, dqResponse.Owner1First, dqResponse.Owner1Last, dqResponse.Owner2First, dqResponse.Owner2Last);
+                rdbtnSelection.Selected = true; // Default the first one to be selected
+                rdbtnlstAddresses.Items.Add(rdbtnSelection);
             }
-
-            xmlFile.Close();
-
-            // Add list item to results selection
-            ListItem rdbtnSelection = new ListItem();
-            rdbtnSelection.Text = rdbtnSelection.Value = String.Format("{0}, {1}, {2} {3}",
-                Request.Form["ctl00$body$txtAddress"], Request.Form["ctl00$body$txtCity"],
-                Request.Form["ctl00$body$txtState"], Request.Form["ctl00$body$txtZip"]);
-            rdbtnSelection.Selected = true; // Default the first one to be selected
-            rdbtnlstAddresses.Items.Add(rdbtnSelection);
-
-            // Add some additional items for demonstration
-            rdbtnSelection = new ListItem("Second Result");
-            rdbtnlstAddresses.Items.Add(rdbtnSelection);
-            rdbtnSelection = new ListItem("Third Result");
-            rdbtnlstAddresses.Items.Add(rdbtnSelection);
-
-            // Add an other item keep as entered
-            rdbtnSelection = new ListItem("Other");
-            rdbtnlstAddresses.Items.Add(rdbtnSelection);
         }
     }
 }

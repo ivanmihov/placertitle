@@ -9,8 +9,6 @@
     <asp:RadioButtonList runat="server" ID="rdbtnlstAddresses"></asp:RadioButtonList>
     <div class="formElement formSubmit"><asp:Button runat="server" Text="Continue" 
             ID="cmdContinue" PostBackUrl="~/Order.aspx" /></div>
-    <textarea runat="server"  id="txtXmlOutput" cols="50" rows="20"></textarea>
-
 </div>
 
 </asp:Content>
