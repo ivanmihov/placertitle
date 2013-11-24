@@ -203,8 +203,7 @@ namespace PTCOrderSite.modules
             bool bSuccess = m_xReader.Read();
 
             // For converting response to proper case
-            CultureInfo cultureInfo = CultureInfo.InvariantCulture;
-            //CultureInfo cultureInfo = Thread.CurrentThread.CurrentCulture;
+            CultureInfo cultureInfo = Thread.CurrentThread.CurrentCulture;
             TextInfo textInfo = cultureInfo.TextInfo;
 
             // If node name is not PROPERTY then there is an error
@@ -214,8 +213,8 @@ namespace PTCOrderSite.modules
                 m_xReader.Read();
 
                 // Pull address values
-                m_strAddress = textInfo.ToTitleCase(m_xReader.GetAttribute("_StreetAddress"));
-                m_strCity = textInfo.ToTitleCase(m_xReader.GetAttribute("_City"));
+                m_strAddress = textInfo.ToTitleCase(m_xReader.GetAttribute("_StreetAddress").ToLower());
+                m_strCity = textInfo.ToTitleCase(m_xReader.GetAttribute("_City").ToLower());
                 m_strState = m_xReader.GetAttribute("_State");
                 m_strZip = m_xReader.GetAttribute("_PostalCode");
                 if (m_xReader.GetAttribute("_PlusFourPostalCode") != "")
@@ -230,7 +229,7 @@ namespace PTCOrderSite.modules
 
                 // Pull identification values
                 m_strAPN = m_xReader.GetAttribute("AssessorsParcelIdentifier");
-                m_strCounty = textInfo.ToTitleCase(m_xReader.GetAttribute("MunicipalityName"));
+                m_strCounty = textInfo.ToTitleCase(m_xReader.GetAttribute("MunicipalityName").ToLower());
 
                 // Go to owner node
                 m_xReader.Read();
@@ -239,8 +238,8 @@ namespace PTCOrderSite.modules
                 m_xReader.Read();
 
                 // Pull owner 1 name values
-                m_strOwner1First = textInfo.ToTitleCase(m_xReader.GetAttribute("_FirstName"));
-                m_strOwner1Last = textInfo.ToTitleCase(m_xReader.GetAttribute("_LastName"));
+                m_strOwner1First = textInfo.ToTitleCase(m_xReader.GetAttribute("_FirstName").ToLower());
+                m_strOwner1Last = textInfo.ToTitleCase(m_xReader.GetAttribute("_LastName").ToLower());
 
                 // Go to spouse start node
                 m_xReader.Read();
@@ -249,7 +248,7 @@ namespace PTCOrderSite.modules
                 m_xReader.Read();
 
                 // Pull owner 2 name values if spouse present
-                m_strOwner2First = textInfo.ToTitleCase(m_xReader.GetAttribute("_FirstName"));
+                m_strOwner2First = textInfo.ToTitleCase(m_xReader.GetAttribute("_FirstName").ToLower());
                 m_strOwner2Last = m_strOwner2First != "" ? m_strOwner1Last : "";
 
                 // Go to end of spouse node
@@ -265,8 +264,8 @@ namespace PTCOrderSite.modules
                 m_xReader.Read();
 
                 // Pull secondary owner information (overrides first owner spouse)
-                m_strOwner2First = textInfo.ToTitleCase(m_xReader.GetAttribute("_FirstName"));
-                m_strOwner2Last = textInfo.ToTitleCase(m_xReader.GetAttribute("_LastName"));
+                m_strOwner2First = textInfo.ToTitleCase(m_xReader.GetAttribute("_FirstName").ToLower());
+                m_strOwner2Last = textInfo.ToTitleCase(m_xReader.GetAttribute("_LastName").ToLower());
 
                 // Skip over secondary spouse information
                 while (m_xReader.Read() && m_xReader.NodeType != XmlNodeType.EndElement) ;

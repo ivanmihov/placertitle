@@ -45,6 +45,11 @@ input
 /* General Layout/Coloring
  * ----------------------- */
 
+.bottomBorder /* used in address results */
+{
+    border-bottom: 1px solid black;
+}
+
 .formBox
 {
     background-color: #EEFAFF;
