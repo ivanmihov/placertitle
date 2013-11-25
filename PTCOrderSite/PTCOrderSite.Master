@@ -1,5 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PTCOrderSite.Master.cs" Inherits="PTCOrderSite.PTCOrderSiteMaster" %>
 
+<% Response.Buffer = true; %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -9,9 +11,10 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>       
+<body>
     <div class="header"></div>
-    <div class="logo"><img src="images/logo.png" alt="Placer Title Company" /></div>
+    <div class="logo">
+        <img src="images/logo.png" alt="Placer Title Company" /></div>
 
     <div id="content">
 
@@ -27,11 +30,11 @@
         <form id="frmMain" runat="server">
             <div class="main">
                 <asp:ContentPlaceHolder ID="body" runat="server">
-        
                 </asp:ContentPlaceHolder>
             </div>
         </form>
-     <div id="footer"><img src="images/footer.png" /></div>   
+        <div id="footer">
+            <img src="images/footer.png" /></div>
     </div>
 </body>
 </html>

@@ -26,6 +26,8 @@ namespace PTCOrderSite
                     + ConfigurationManager.AppSettings["xmlEscrowOfficers"]);*/
                 loadDropDownElements(policyType, strXmlFolder + '\\'
                     + ConfigurationManager.AppSettings["xmlPolicyTypes"]);
+                loadDropDownElements(cityTransferTax, strXmlFolder + '\\'
+                    + ConfigurationManager.AppSettings["xmlWhoPaysCityTransferTax"]);
             }
         }
 

@@ -13,12 +13,32 @@ namespace PTCOrderSite
         {
             // Put cursor in username prompt
             txtUsername.Focus();
+
+            // Retrieve username from cookies
+            if (!IsPostBack)
+            {
+                if (Request.Cookies["UserName"] != null)
+                {
+                    txtUsername.Text = Request.Cookies["UserName"].Value;
+                }
+            }
         }
 
         protected void cmdSubmit_Click(object sender, EventArgs e)
         {
             // Store username in the session
             Session["username"] = txtUsername.Text;
+            
+            // Store username in cookies for 30 days
+            if (chkRememberLogin.Checked)
+            {
+                Response.Cookies["UserName"].Expires = DateTime.Now.AddDays(30);
+            }
+            else
+            {
+                Response.Cookies["UserName"].Expires = DateTime.Now.AddDays(-1);
+            }
+            Response.Cookies["UserName"].Value = txtUsername.Text.Trim();
 
             // Go to main menu
             Response.Redirect("~/MainMenu.aspx");

@@ -36,7 +36,7 @@ namespace PTCOrderSite.modules
 
             using (XmlReader xmlReader = XmlReader.Create(xmlFile))
             {
-                xmlReader.Settings.IgnoreWhitespace = true;
+                //xmlReader.Settings.IgnoreWhitespace = true;
                 while (xmlReader.Read())
                 {
                     // If in a start node
