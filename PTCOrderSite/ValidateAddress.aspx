@@ -2,7 +2,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <script language="javascript" type="text/javascript">
     function changeSelection() {
-        alert("in handler");
+        var radioButtons = document.getElementsByTagName("ctl00$body$AddressSelection");
+
+        alert("about to enter loop");
+
+        alert("radioButtons.length=" + radioButtons.length);
+
+        for (var i = 0; i < radioButtons.length; i++) {
+            alert("in loop, i=" + i);
+            if (radioButtons[i].checked == true)
+                alert(radioButtons[i] + "is checked");
+        }
     }
 </script>
 </asp:Content>
