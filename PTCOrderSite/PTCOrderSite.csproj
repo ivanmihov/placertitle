@@ -79,7 +79,9 @@
     <Content Include="images\login-btn.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\submit-btn.png" />
-    <Content Include="inputSamples\CityTransferTax.xml" />
+    <Content Include="inputSamples\CityTransferTax.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="inputSamples\DataQuickVerification.xml" />
     <Content Include="inputSamples\Delivery.xml" />
     <Content Include="inputSamples\EscrowOfficers.xml" />
@@ -87,16 +89,28 @@
     <Content Include="inputSamples\HazardDisclosure.xml" />
     <Content Include="inputSamples\HazardPtcYN.xml" />
     <Content Include="inputSamples\HoaTransferFee.xml" />
-    <Content Include="inputSamples\HomeWarranty.xml" />
-    <Content Include="inputSamples\OwnerPremium.xml" />
-    <Content Include="inputSamples\Products.xml" />
-    <Content Include="inputSamples\RoofReport.xml" />
+    <Content Include="inputSamples\HomeWarranty.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="inputSamples\OwnerPremium.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="inputSamples\Products.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="inputSamples\RoofReport.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="inputSamples\TermiteReport.xml" />
-    <Content Include="inputSamples\TermiteWork.xml" />
+    <Content Include="inputSamples\TermiteWork.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="inputSamples\TransactionTypes.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="inputSamples\TransferTax.xml" />
+    <Content Include="inputSamples\TransferTax.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="inputSamples\UserLogin.xml" />
     <Content Include="outputSamples\RefiOrderIn.xml" />
     <Content Include="outputSamples\SalesOrderIn.xml" />
