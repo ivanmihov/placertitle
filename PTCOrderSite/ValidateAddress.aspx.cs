@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Xml;
 
@@ -19,7 +20,7 @@ namespace PTCOrderSite
             DataQuickResponse dqResponse = new DataQuickResponse(
                 Request.Form["ctl00$body$txtAddress"], Request.Form["ctl00$body$txtZip"]);
 
-            for (int i = 1; dqResponse.Read(); i++ )
+            for (int i = 0; dqResponse.Read(); i++ )
             {
                 // Create new table row
                 TableRow tr = new TableRow();
@@ -29,8 +30,6 @@ namespace PTCOrderSite
 
                 // Create new radio button
                 RadioButton rdButton = new RadioButton();
-                if (i == 1)
-                    rdButton.Checked = true;
 
                 // Set radio button group and add to cell and add cell to row
                 rdButton.GroupName = "AddressSelection";
@@ -42,10 +41,6 @@ namespace PTCOrderSite
                 // Create new table cell
                 td = new TableCell();
                 td.CssClass = "bottomBorder";
-
-                // Create result area
-                Label lblResult = new Label();
-                lblResult.ID = String.Format("Result_{0}", i);
 
                 // Create a label for each dataquick response element
                 Label lblAddress = new Label();
@@ -83,34 +78,73 @@ namespace PTCOrderSite
 
                 // Add elements to result area
                 if (lblOwner1First.Text != "") // Properties in Trust only return last name
-                    AddLabelElement(lblResult, lblOwner1First, " ");
-                AddLabelElement(lblResult, lblOwner1Last, "<br />");
+                    AddLabelElement(td, lblOwner1First, " ");
+                AddLabelElement(td, lblOwner1Last, "<br />");
                 if (lblOwner2First.Text != "")
                 {
-                    AddLabelElement(lblResult, lblOwner2First, " ");
-                    AddLabelElement(lblResult, lblOwner2Last, "<br />");
+                    AddLabelElement(td, lblOwner2First, " ");
+                    AddLabelElement(td, lblOwner2Last, "<br />");
                 }
-                AddLabelElement(lblResult, lblAddress, ", ");
-                AddLabelElement(lblResult, lblCity, ", ");
-                AddLabelElement(lblResult, lblState, " ");
-                AddLabelElement(lblResult, lblZip, "<br />");
-                AddLabelElement(lblResult, lblCounty, " ");
-                AddLabelElement(lblResult, lblAPN, "");
+                AddLabelElement(td, lblAddress, ", ");
+                AddLabelElement(td, lblCity, ", ");
+                AddLabelElement(td, lblState, " ");
+                AddLabelElement(td, lblZip, "<br />");
+                AddLabelElement(td, lblCounty, " ");
+                AddLabelElement(td, lblAPN, "");
 
-                td.Controls.Add(lblResult);
+                // Add data cell to row and add row to table
+                tr.Cells.Add(td);
+                tblResults.Rows.Add(tr);
+
+                // If on first element then select the radio button and populate the hidden fields
+                if (i == 0)
+                {
+                    rdButton.Checked = true;
+                    selectedAddress.Value = lblAddress.Text;
+                    selectedAPN.Value = lblAPN.Text;
+                    selectedCity.Value = lblCity.Text;
+                    selectedCounty.Value = lblCounty.Text;
+                    selectedOwner1First.Value = lblOwner1First.Text;
+                    selectedOwner1Last.Value = lblOwner1Last.Text;
+                    selectedOwner2First.Value = lblOwner2First.Text;
+                    selectedOwner2Last.Value = lblOwner2Last.Text;
+                    selectedState.Value = lblState.Text;
+                    selectedZip.Value = lblZip.Text;
+                }
+            }
+
+            // if there were no results then show the address an zip as input
+            if (dqResponse.Count == 0)
+            {
+                string strAddress = Request.Form["ctl00$body$txtAddress"];
+                string strZip = Request.Form["ctl00$body$txtZip"];
+                TableRow tr = new TableRow();
+                TableCell td = new TableCell();
+
+                // if the address and/or zip is blank then redirect back to enter address form
+                if(strAddress == "" || strZip == "")
+                    Response.Redirect("~/EnterAddress.aspx");
+
+                td.Text = String.Format("No matches found, click continue to proceed with<br />"
+                    + "Address: {0}<br />"
+                    + "Zip: {1}<br />"
+                    + "Note: Additional information will be required on the order form", strAddress, strZip);
 
                 tr.Cells.Add(td);
-
                 tblResults.Rows.Add(tr);
+
+                // Populate hidden fields
+                selectedAddress.Value = strAddress;
+                selectedZip.Value = strZip;
             }
         }
 
-        private void AddLabelElement(Label lblParent, Label lblChild, string strSeparator)
+        private void AddLabelElement(TableCell tdParent, Label lblChild, string strSeparator)
         {
             Literal ltSeparator = new Literal();
             ltSeparator.Text = strSeparator;
-            lblParent.Controls.Add(lblChild);
-            lblParent.Controls.Add(ltSeparator);
+            tdParent.Controls.Add(lblChild);
+            tdParent.Controls.Add(ltSeparator);
         }
     }
 }

@@ -40,6 +40,114 @@ namespace PTCOrderSite {
         protected global::AjaxControlToolkit.Accordion Accordion1;
         
         /// <summary>
+        /// AccordionPane1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.AccordionPane AccordionPane1;
+        
+        /// <summary>
+        /// txtOwner1First control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtOwner1First;
+        
+        /// <summary>
+        /// txtOwner1Last control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtOwner1Last;
+        
+        /// <summary>
+        /// txtOwner2First control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtOwner2First;
+        
+        /// <summary>
+        /// txtOwner2Last control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtOwner2Last;
+        
+        /// <summary>
+        /// txtAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAddress;
+        
+        /// <summary>
+        /// txtCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCity;
+        
+        /// <summary>
+        /// txtState control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtState;
+        
+        /// <summary>
+        /// txtZip control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtZip;
+        
+        /// <summary>
+        /// txtCounty control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCounty;
+        
+        /// <summary>
+        /// txtAPN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAPN;
+        
+        /// <summary>
+        /// AccordionPane2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.AccordionPane AccordionPane2;
+        
+        /// <summary>
         /// referenceNum control.
         /// </summary>
         /// <remarks>
@@ -76,13 +184,13 @@ namespace PTCOrderSite {
         protected global::System.Web.UI.WebControls.DropDownList transactionType;
         
         /// <summary>
-        /// AccordionPane2 control.
+        /// AccordionPane3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane2;
+        protected global::AjaxControlToolkit.AccordionPane AccordionPane3;
         
         /// <summary>
         /// office control.
@@ -130,13 +238,13 @@ namespace PTCOrderSite {
         protected global::AjaxControlToolkit.CalendarExtender CalendarExtenderClosingDate;
         
         /// <summary>
-        /// AccordionPane3 control.
+        /// AccordionPane4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane3;
+        protected global::AjaxControlToolkit.AccordionPane AccordionPane4;
         
         /// <summary>
         /// purchasePrice control.
@@ -193,13 +301,13 @@ namespace PTCOrderSite {
         protected global::System.Web.UI.WebControls.TextBox sellingCompanyAndOr;
         
         /// <summary>
-        /// AccordionPane4 control.
+        /// AccordionPane5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane4;
+        protected global::AjaxControlToolkit.AccordionPane AccordionPane5;
         
         /// <summary>
         /// title control.
@@ -319,13 +427,13 @@ namespace PTCOrderSite {
         protected global::System.Web.UI.WebControls.DropDownList ptcOrder;
         
         /// <summary>
-        /// AccordionPane5 control.
+        /// AccordionPane6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane5;
+        protected global::AjaxControlToolkit.AccordionPane AccordionPane6;
         
         /// <summary>
         /// cmdSubmit control.

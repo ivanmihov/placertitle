@@ -22,7 +22,44 @@
             FadeTransitions="true"
             runat="server">
             <Panes>
-                <asp:AccordionPane runat="server">
+                <asp:AccordionPane ID="AccordionPane1" runat="server">
+                    <Header>Property Information</Header>
+                    <Content>
+                        <table class="accordionBorder">
+                            <tr>
+                                <td class="tableFirstColumn">Owner 1 First</td>
+                                <td class="tableSecondColumn"><asp:TextBox runat="server" ID="txtOwner1First"></asp:TextBox></td>
+                                <td class="tableThirdColumn">Owner 1 Last</td>
+                                <td class="tableFourthColumn"><asp:TextBox runat="server" ID="txtOwner1Last"></asp:TextBox></td>
+                            </tr>
+                            <tr>
+                                <td class="tableFirstColumn">Owner 2 First</td>
+                                <td class="tableSecondColumn"><asp:TextBox runat="server" ID="txtOwner2First"></asp:TextBox></td>
+                                <td class="tableThirdColumn">Owner 2 Last</td>
+                                <td class="tableFourthColumn"><asp:TextBox runat="server" ID="txtOwner2Last"></asp:TextBox></td>
+                            </tr>
+                            <tr>
+                                <td class="tableFirstColumn">Address</td>
+                                <td class="tableSecondColumn"><asp:TextBox runat="server" ID="txtAddress"></asp:TextBox></td>
+                                <td class="tableThirdColumn">City</td>
+                                <td class="tableFourthColumn"><asp:TextBox runat="server" ID="txtCity"></asp:TextBox></td>
+                            </tr>
+                            <tr>
+                                <td class="tableFirstColumn">State</td>
+                                <td class="tableSecondColumn"><asp:TextBox runat="server" ID="txtState"></asp:TextBox></td>
+                                <td class="tableThirdColumn">Zip</td>
+                                <td class="tableFourthColumn"><asp:TextBox runat="server" ID="txtZip"></asp:TextBox></td>
+                            </tr>
+                            <tr>
+                                <td class="tableFirstColumn">County</td>
+                                <td class="tableSecondColumn"><asp:TextBox runat="server" ID="txtCounty"></asp:TextBox></td>
+                                <td class="tableThirdColumn">APN</td>
+                                <td class="tableFourthColumn"><asp:TextBox runat="server" ID="txtAPN"></asp:TextBox></td>
+                            </tr>
+                        </table>
+                    </Content>
+                </asp:AccordionPane>
+                <asp:AccordionPane ID="AccordionPane2" runat="server">
                     <Header>General Information<span class="accordionHeaderExpand"></span></Header>
                     <Content>
                         <table class="accordionBorder">
@@ -61,7 +98,7 @@
                         </table>
                     </Content>
                 </asp:AccordionPane>
-                <asp:AccordionPane ID="AccordionPane2" runat="server">
+                <asp:AccordionPane ID="AccordionPane3" runat="server">
                     <Header>Escrow Information<span class="accordionHeaderExpand"></span></Header>
                     <Content>
                         <table class="accordionBorder">
@@ -98,7 +135,7 @@
                         </table>
                     </Content>
                 </asp:AccordionPane>
-                <asp:AccordionPane ID="AccordionPane3" runat="server">
+                <asp:AccordionPane ID="AccordionPane4" runat="server">
                     <Header>Escrow Terms Information<span class="accordionHeaderExpand"></span></Header>
                     <Content>
                         <table class="accordionBorder">
@@ -133,7 +170,7 @@
                         </table>
                     </Content>
                 </asp:AccordionPane>
-                <asp:AccordionPane ID="AccordionPane4" runat="server">
+                <asp:AccordionPane ID="AccordionPane5" runat="server">
                     <Header>Who Pays?<span class="accordionHeaderExpand"></span></Header>
                     <Content>
                         <table class="accordionBorder">
@@ -277,7 +314,7 @@
                         </table>
                     </Content>
                 </asp:AccordionPane>
-                <asp:AccordionPane ID="AccordionPane5" runat="server">
+                <asp:AccordionPane ID="AccordionPane6" runat="server">
                     <Header>Payoff Information<span class="accordionHeaderExpand"></span></Header>
                     <Content>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
