@@ -23,7 +23,7 @@
             runat="server">
             <Panes>
                 <asp:AccordionPane ID="AccordionPane1" runat="server">
-                    <Header>Property Information</Header>
+                    <Header>Property Information<span class="accordionHeaderExpand"></span></Header>
                     <Content>
                         <table class="accordionBorder">
                             <tr>
@@ -105,13 +105,8 @@
                             <tr>
                                 <td class="tableFirstColumn">Office<span class="red">*</span></td>
                                 <td class="tableSecondColumn">
-                                    <asp:DropDownList ID="office" AutoPostBack="True" runat="server" CssClass="dropdown">
-                                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                                        <asp:ListItem Value="White"> White </asp:ListItem>
-                                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
+                                    <asp:DropDownList ID="office" AutoPostBack="True" runat="server" CssClass="dropdown"
+                                        OnSelectedIndexChanged="office_SelectedIndexChanged" >
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">Escrow Officer<span class="red">*</span></td>
@@ -178,23 +173,11 @@
                                 <td class="tableFirstColumn">Title</td>
                                 <td class="tableSecondColumn">
                                     <asp:DropDownList ID="title" AutoPostBack="True" runat="server" CssClass="dropdown">
-                                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                                        <asp:ListItem Value="White"> White </asp:ListItem>
-                                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">Escrow</td>
                                 <td class="tableFourthColumn">
                                     <asp:DropDownList ID="escrow" AutoPostBack="True" runat="server" CssClass="dropdown">
-                                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                                        <asp:ListItem Value="White"> White </asp:ListItem>
-                                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                                     </asp:DropDownList>
                                 </td>
                             </tr>
@@ -202,12 +185,6 @@
                                 <td class="tableFirstColumn">Transfer Tax</td>
                                 <td class="tableSecondColumn">
                                     <asp:DropDownList ID="transferTax" AutoPostBack="True" runat="server" CssClass="dropdown">
-                                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                                        <asp:ListItem Value="White"> White </asp:ListItem>
-                                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">City Transfer Tax</td>
@@ -228,12 +205,6 @@
                                 <td class="tableFirstColumn">Transfer Fee</td>
                                 <td class="tableSecondColumn">
                                     <asp:DropDownList ID="transferFee" AutoPostBack="True" runat="server" CssClass="dropdown">
-                                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                                        <asp:ListItem Value="White"> White </asp:ListItem>
-                                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn"></td>
@@ -243,23 +214,11 @@
                                 <td class="tableFirstColumn">Termite Report</td>
                                 <td class="tableSecondColumn">
                                     <asp:DropDownList ID="termiteReport" AutoPostBack="True" runat="server" CssClass="dropdown">
-                                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                                        <asp:ListItem Value="White"> White </asp:ListItem>
-                                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">Termite Work</td>
                                 <td class="tableFourthColumn">
                                     <asp:DropDownList ID="termiteWork" AutoPostBack="True" runat="server" CssClass="dropdown">
-                                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                                        <asp:ListItem Value="White"> White </asp:ListItem>
-                                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                                     </asp:DropDownList>
                                 </td>
                             </tr>
@@ -267,23 +226,11 @@
                                 <td class="tableFirstColumn">Roof Report</td>
                                 <td class="tableSecondColumn">
                                     <asp:DropDownList ID="roofReport" AutoPostBack="True" runat="server" CssClass="dropdown">
-                                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                                        <asp:ListItem Value="White"> White </asp:ListItem>
-                                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">Home Warranty</td>
                                 <td class="tableFourthColumn">
                                     <asp:DropDownList ID="homeWarranty" AutoPostBack="True" runat="server" CssClass="dropdown">
-                                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                                        <asp:ListItem Value="White"> White </asp:ListItem>
-                                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                                     </asp:DropDownList>
                                 </td>
                             </tr>
@@ -291,23 +238,11 @@
                                 <td class="tableFirstColumn">Hazard Disclosure</td>
                                 <td class="tableSecondColumn">
                                     <asp:DropDownList ID="hazardDisclosure" AutoPostBack="True" runat="server" CssClass="dropdown">
-                                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                                        <asp:ListItem Value="White"> White </asp:ListItem>
-                                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">PTC to Order</td>
                                 <td class="tableFourthColumn">
                                     <asp:DropDownList ID="ptcOrder" AutoPostBack="True" runat="server" CssClass="dropdown">
-                                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                                        <asp:ListItem Value="White"> White </asp:ListItem>
-                                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                                     </asp:DropDownList>
                                 </td>
                             </tr>

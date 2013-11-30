@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Confirmation.aspx" />
+    <Content Include="Error.aspx" />
     <Content Include="images\bg-accordion-selected.png" />
     <Content Include="images\bg-accordion.jpg" />
     <Content Include="images\bg-body.jpg" />
@@ -138,7 +139,15 @@
     <Compile Include="Confirmation.aspx.designer.cs">
       <DependentUpon>Confirmation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
     <Compile Include="modules\DataQuickResponse.cs" />
+    <Compile Include="modules\EscrowOffices.cs" />
     <Compile Include="modules\MLHC_XmlTools.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PTCOrderSite.Master.cs">

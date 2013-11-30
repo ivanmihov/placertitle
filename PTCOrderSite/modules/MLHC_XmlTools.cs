@@ -25,22 +25,34 @@ namespace PTCOrderSite.modules
         /// is the description.
         /// </summary>
         /// <param name="fileName">Absoulute path to the xml file</param>
+        /// <param name="nErrorCode">0 for success, error code if failure</param>
         /// <returns>Collection of results (Code & Description)</returns>
-        public static List<MLHC_ListItem> ReadXmlList(string strFileName)
+        public static List<MLHC_ListItem> ReadXmlList(string strFileName, ref int nErrorCode)
         {
             var xmlValues = new List<MLHC_ListItem>();
+            nErrorCode = 0;
             MLHC_ListItem result; // store individual result to add to returned list
 
             // Open XML file and test output
             FileStream xmlFile = new FileStream(strFileName, FileMode.Open);
 
-            using (XmlReader xmlReader = XmlReader.Create(xmlFile))
+            XmlReaderSettings settings = new XmlReaderSettings();
+            settings.IgnoreWhitespace = true;
+
+            using (XmlReader xmlReader = XmlReader.Create(xmlFile, settings))
             {
-                //xmlReader.Settings.IgnoreWhitespace = true;
                 while (xmlReader.Read())
                 {
-                    // If in a start node
-                    if (xmlReader.NodeType == XmlNodeType.Element)
+                    // If at the error tag (will be before any other nodes)
+                    if (xmlReader.NodeType == XmlNodeType.Element && xmlReader.Name == "ERROR")
+                    {
+                        // Read next node to get error value
+                        xmlReader.Read();
+                        nErrorCode = Int32.Parse(xmlReader.Value);
+                    }
+                    // If in any other start node and no error
+                    else if (nErrorCode == 0 && xmlReader.NodeType == XmlNodeType.Element
+                        && xmlReader.Name != "ROOT")
                     {
                         result = new MLHC_ListItem();
 
@@ -50,7 +62,7 @@ namespace PTCOrderSite.modules
 
                         // Skip to next text node and read value into description
                         while (xmlReader.Read() && xmlReader.NodeType != XmlNodeType.Text) ;
-                        result.Description = xmlReader.Value;
+                        result.Description = HttpUtility.UrlDecode(xmlReader.Value);
 
                         xmlValues.Add(result);
                     }
