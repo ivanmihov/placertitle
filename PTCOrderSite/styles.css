@@ -58,6 +58,7 @@ input {
     padding: 10px;
     margin: 100px auto 0px auto;
     border-radius: 5px;
+    background-color:#00132f;
 }
 
     .formBox h3 {
@@ -124,6 +125,7 @@ input {
 
 .mediumForm {
     width: 340px;
+    color:white;
 }
 
 .wideForm {
@@ -135,7 +137,6 @@ input {
 
 .header {
     background: url('images/bg-header.jpg') repeat-x center 0;
-    width: 1700px;
     height: 138px;
 }
 

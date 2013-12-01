@@ -77,6 +77,7 @@
     <Content Include="images\bg-body.jpg" />
     <Content Include="images\bg-header.jpg" />
     <Content Include="images\bg-menu-wrapper.png" />
+    <Content Include="images\continue-btn.png" />
     <Content Include="images\login-btn.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\submit-btn.png" />
