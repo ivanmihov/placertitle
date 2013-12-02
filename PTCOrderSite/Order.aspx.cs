@@ -57,16 +57,19 @@ namespace PTCOrderSite
             }
 
             // Pull information from prior form
-            txtOwner1First.Text = Request.Form["ctl00$body$selectedOwner1First"];
-            txtOwner1Last.Text = Request.Form["ctl00$body$selectedOwner1Last"];
-            txtOwner2First.Text = Request.Form["ctl00$body$selectedOwner2First"];
-            txtOwner2Last.Text = Request.Form["ctl00$body$selectedOwner2Last"];
-            txtAddress.Text = Request.Form["ctl00$body$selectedAddress"];
-            txtAPN.Text = Request.Form["ctl00$body$selectedAPN"];
-            txtCity.Text = Request.Form["ctl00$body$selectedCity"];
-            txtCounty.Text = Request.Form["ctl00$body$selectedCounty"];
-            txtState.Text = Request.Form["ctl00$body$selectedState"];
-            txtZip.Text = Request.Form["ctl00$body$selectedZip"];
+            if (!IsPostBack)
+            {
+                txtOwner1First.Text = Request.Form["ctl00$body$selectedOwner1First"];
+                txtOwner1Last.Text = Request.Form["ctl00$body$selectedOwner1Last"];
+                txtOwner2First.Text = Request.Form["ctl00$body$selectedOwner2First"];
+                txtOwner2Last.Text = Request.Form["ctl00$body$selectedOwner2Last"];
+                txtAddress.Text = Request.Form["ctl00$body$selectedAddress"];
+                txtAPN.Text = Request.Form["ctl00$body$selectedAPN"];
+                txtCity.Text = Request.Form["ctl00$body$selectedCity"];
+                txtCounty.Text = Request.Form["ctl00$body$selectedCounty"];
+                txtState.Text = Request.Form["ctl00$body$selectedState"];
+                txtZip.Text = Request.Form["ctl00$body$selectedZip"];
+            }
         }
 
         /// <summary>

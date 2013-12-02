@@ -103,6 +103,15 @@ namespace PTCOrderSite {
         protected global::System.Web.UI.WebControls.HiddenField selectedOwner2Last;
         
         /// <summary>
+        /// cmdSubmitTop control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton cmdSubmitTop;
+        
+        /// <summary>
         /// tblResults control.
         /// </summary>
         /// <remarks>
@@ -110,5 +119,14 @@ namespace PTCOrderSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Table tblResults;
+        
+        /// <summary>
+        /// cmdSubmitBottom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton cmdSubmitBottom;
     }
 }

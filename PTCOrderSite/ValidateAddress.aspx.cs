@@ -19,6 +19,12 @@ namespace PTCOrderSite
             DataQuickResponse dqResponse = new DataQuickResponse(
                 Request.Form["ctl00$body$txtAddress"], Request.Form["ctl00$body$txtZip"]);
 
+            // Hide top submit button if there was only one result
+            if (dqResponse.Count <= 1)
+                cmdSubmitTop.Visible = false;
+            else
+                cmdSubmitTop.Visible = true;
+
             for (int i = 0; dqResponse.Read(); i++ )
             {
                 // Create new table row
@@ -39,7 +45,8 @@ namespace PTCOrderSite
 
                 // Create new table cell
                 td = new TableCell();
-                td.CssClass = "bottomBorder";
+                if (i != dqResponse.Count - 1)
+                    td.CssClass = "bottomBorder";
 
                 // Create a label for each dataquick response element
                 Label lblAddress = new Label();

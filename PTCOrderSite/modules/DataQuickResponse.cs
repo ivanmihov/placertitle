@@ -151,6 +151,7 @@ namespace PTCOrderSite.modules
             string strPassword = ConfigurationManager.AppSettings["dataQuickPassword"];
             string strUrl = ConfigurationManager.AppSettings["dataQuickUrl"];
             string strUsername = ConfigurationManager.AppSettings["dataQuickUsername"];
+            int nMax = Int32.Parse(ConfigurationManager.AppSettings["dataQuickMax"]);
 
             // Setup XML reader preferences
             XmlReaderSettings settings = new XmlReaderSettings();
@@ -160,8 +161,8 @@ namespace PTCOrderSite.modules
             // Test URL: http://xmlservices.dataquick.com/UrlListener.aspx?ActionType=Search&Login=18486a99&Password=lender&OwnerFirst=&OwnerLast=&Address=3rd%20Ave&City=&State=&County=&Zip=95817&AddressType=Site&SearchType=UntilFound&DoCount=true&DoSearch=true&UsagePaging=false&MaxProp=99
             m_xReader = XmlReader.Create(String.Format("{0}?ActionType=Search&Login={1}&Password={2}&OwnerFirst=&"
                 + "OwnerLast=&Address={3}&City=&State=&County=&Zip={4}&AddressType=Site&SearchType=UntilFound&DoCount=true&"
-                + "DoSearch=true&UsagePaging=false&MaxProp=99",
-                strUrl, strUsername, strPassword, strAddress, strZip), settings);
+                + "DoSearch=true&UsagePaging=false&MaxProp={5}",
+                strUrl, strUsername, strPassword, strAddress, strZip, nMax), settings);
 
             while (m_xReader.Read() && m_xReader.Name != "RESPONSE_DATA") ;
 
@@ -174,7 +175,8 @@ namespace PTCOrderSite.modules
             // Pull the result count
             try
             {
-                m_nNumResults = Int32.Parse(m_xReader.GetAttribute(1));
+                int nResults = Int32.Parse(m_xReader.GetAttribute(1));
+                m_nNumResults = nResults > nMax ? nMax : nResults;
             }
             catch
             {

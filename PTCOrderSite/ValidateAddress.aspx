@@ -49,12 +49,18 @@
     <asp:HiddenField runat="server" ID="selectedOwner1Last" />
     <asp:HiddenField runat="server" ID="selectedOwner2First" />
     <asp:HiddenField runat="server" ID="selectedOwner2Last" />
+
+    <div class="formElement formSubmit">
+        <asp:ImageButton ID="cmdSubmitTop" src="images/continue-btn.png" runat="server" Text="Login" AlternateText="Button" PostBackUrl="~/Order.aspx" />
+    </div>
+
     <asp:Table runat="server" ID="tblResults">
     </asp:Table>
 
     <div class="formElement formSubmit">
-        <asp:ImageButton src="images/continue-btn.png" runat="server" Text="Login" AlternateText="Button" PostBackUrl="~/Order.aspx" />
+        <asp:ImageButton ID="cmdSubmitBottom" src="images/continue-btn.png" runat="server" Text="Login" AlternateText="Button" PostBackUrl="~/Order.aspx" />
     </div>
+
 </div>
 
 </asp:Content>
