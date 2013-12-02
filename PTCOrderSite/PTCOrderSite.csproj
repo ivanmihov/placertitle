@@ -114,6 +114,8 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="inputSamples\UserLogin.xml" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery.html5-placeholder-shim.js" />
     <Content Include="outputSamples\RefiOrderIn.xml" />
     <Content Include="outputSamples\SalesOrderIn.xml" />
     <Content Include="styles.css" />

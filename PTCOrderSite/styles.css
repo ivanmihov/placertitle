@@ -43,6 +43,8 @@ h6 {
 
 input {
     border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
 }
 
 /* General Layout/Coloring
@@ -58,6 +60,8 @@ input {
     padding: 10px;
     margin: 100px auto 0px auto;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     background-color:#00132f;
 }
 
@@ -97,6 +101,8 @@ input {
     height: 30px;
     padding-left: 10px;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border: 1px solid #ccc;
 }
 
@@ -214,8 +220,8 @@ input {
                 font: bold 16px/46px "Lato","Trebuchet MS", Arial, Helvetica, sans-serif;
                 display: block;
                 height: auto;
-                border-bottom: 5px solid #143157;
-                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#0f6fb2', EndColorStr='#224170');
+                /*border-bottom: 5px solid #143157;
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#0f6fb2', EndColorStr='#224170'); IE gradient*/
                 color: #fff;
                 text-decoration: none;
                 transition: all .2s ease-in;
@@ -337,6 +343,8 @@ input {
 .accordion {
     margin: 0 auto;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
 }
 
 .accordionOrder {
@@ -345,9 +353,12 @@ input {
 
 .accordionHeader {
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border: 1px solid #2F4F4F;
     color: white;
     background: linear-gradient(to bottom, rgba(10, 62, 109, 1) 0%, rgb(49, 94, 138) 100%) repeat scroll 0% 0% rgb(0, 33, 63);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a3e6d', endColorstr='#315e8a'); /*IE gradient*/
     background-color: rgb(39, 110, 175);
     background-image: linear-gradient(to bottom, rgb(48, 89, 127) 0%, rgb(0, 51, 100) 100%);
     background-repeat: repeat;
@@ -376,6 +387,8 @@ input {
 
 .accordionHeaderSelected {
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border: 1px solid #2F4F4F;
     color: black;
     background-image: url("images/bg-accordion-selected.png");
@@ -393,6 +406,8 @@ input {
 
 .accordionContent {
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border: 1px solid #2F4F4F;
     background-color: #D3DEEF;
     border: 1px dashed #2F4F4F;
@@ -434,14 +449,20 @@ table.accordionBorder {
 
 .textbox {
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 
 .dropdown {
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
 }
 
 .submitButton {
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     background: linear-gradient(to bottom, rgba(10, 62, 109, 1) 0%, rgb(49, 94, 138) 100%) repeat scroll 0% 0% rgb(0, 33, 63);
     background-color: rgb(39, 110, 175);
     background-image: linear-gradient(to bottom, rgb(48, 89, 127) 0%, rgb(0, 51, 100) 100%);
