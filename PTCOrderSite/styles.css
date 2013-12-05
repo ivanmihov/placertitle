@@ -244,12 +244,21 @@ input {
     margin-top: -5px;
 }
 
+#copyright {
+    color: white;
+    position: absolute;
+    text-align: right;
+    width: 960px;
+    margin-top: -93px;
+    font: 16px/1.5 Raleway,Helvetica,Arial,Verdana,sans-serif;
+}
 
 #footer {
     background-image: url("/images/footer_background.png");
     background-repeat: repeat;
     height: 300px;
     width: 960px;
+    margin-left: 1px;
 }
 
 #shadow-left {

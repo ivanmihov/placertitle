@@ -40,7 +40,15 @@
             </div>
         </form>
         <div id="footer">
-            <img src="images/footer.png" /></div>
+            <a href="http://www.stewart.com/agency-services/stewart-trusted-providers" target="_blank">
+                <img style="margin-top: 40px;margin-left: 300px;position: absolute;"
+                     src="http://www.stewart.com/microsites/150/images/stewart_trusted_provider_small.jpg" alt="" /></a>
+            <img src="images/footer.png" alt="" />
+            <div id="copyright">
+                <p style="margin-right: 10px;">copyright © 2013 Placer Title Company. all rights reserved Privacy Policy</p>
+                <p style="margin-right: 10px;">Website Design by iSelect Internet</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
