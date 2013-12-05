@@ -7,6 +7,19 @@
     <h1>Please Login</h1>
     <div id="loginContainer">
         <div class="loginFormBox">
+                <span style="color:white;">
+                    <asp:ValidationSummary ID="ValidationSummary1" runat="server" 
+                     HeaderText="There were errors on the page:" />
+                </span>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                    ControlToValidate="txtUsername" CssClass="firstValidator" ErrorMessage="Username is required.">
+                    <img src="./images/error_small.png" alt="error"/>
+                </asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                    ControlToValidate="txtPassword" CssClass="secondValidator" ErrorMessage="Password is required.">
+                    <img src="./images/error_small.png" alt="error"/>
+                </asp:RequiredFieldValidator>
+            
             <div style="text-align: center; margin-top: 20px">
                 <asp:TextBox runat="server" ID="txtUsername" placeholder="Username" CssClass="formTextbox"></asp:TextBox></div>
             <br />

@@ -6,6 +6,18 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <h1>Please Enter an Address</h1>
     <div class="formBox mediumForm">
+                <span style="color:white;">
+                    <asp:ValidationSummary ID="ValidationSummary1" runat="server" 
+                     HeaderText="There were errors on the page:" />
+                </span>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                    ControlToValidate="txtAddress" CssClass="firstValidator" ErrorMessage="Address is required.">
+                    <img src="./images/error_small.png" alt="error"/>
+                </asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                    ControlToValidate="txtZip" CssClass="secondValidator" ErrorMessage="Zip is required.">
+                    <img src="./images/error_small.png" alt="error"/>
+                </asp:RequiredFieldValidator>
         <div class="formElement">
             <asp:TextBox runat="server" ID="txtAddress" CssClass="formTextbox" placeholder="Address"></asp:TextBox>
         </div>
