@@ -25,6 +25,10 @@ namespace PTCOrderSite
             else
                 cmdSubmitTop.Visible = true;
 
+            // Check for communication error
+            if (dqResponse.CommunicationError)
+                Response.Redirect(String.Format("~/Error.aspx?Error={0}&File={1}", dqResponse.ErrorMessage, "DataQuick"));
+
             for (int i = 0; dqResponse.Read(); i++ )
             {
                 // Create new table row
