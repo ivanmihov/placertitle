@@ -6,6 +6,7 @@ body {
     font-size: 1em;
     background: #00070E url('images/bg-body.jpg') repeat-x center 138px;
     margin: 0px;
+    display:none;
 }
 
 a, a:visited {

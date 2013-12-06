@@ -7,17 +7,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link type="text/css" rel="Stylesheet" href="styles.css" />
-    
-    <!--[IF IE]>
-        <script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+    <script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+   
+     <!--[IF IE]>
         <script type='text/javascript' src='js/jquery.html5-placeholder-shim.js'></script>
     <![endif]-->
-   
+
+   <script type="text/javascript">
+       $(window).load(function () {
+    // When the page has loaded
+    $("body").fadeIn(0);
+       });
+   </script>
+
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
 </head>
 <body>
+
     <div class="header"></div>
     <div class="logo">
         <img src="images/logo.png" alt="Placer Title Company" /></div>
