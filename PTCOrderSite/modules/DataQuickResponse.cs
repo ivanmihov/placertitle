@@ -136,6 +136,28 @@ namespace PTCOrderSite.modules
             }
         }
 
+        /// <summary>
+        /// True if there was a communication error when loading DataQuick response
+        /// </summary>
+        public bool CommunicationError
+        {
+            get
+            {
+                return m_strErrorMessage != "";
+            }
+        }
+
+        /// <summary>
+        /// Communication error from DataQuick
+        /// </summary>
+        public string ErrorMessage
+        {
+            get
+            {
+                return m_strErrorMessage;
+            }
+        }
+
         /****************************
          * Methods
          * **************************/
@@ -159,18 +181,26 @@ namespace PTCOrderSite.modules
 
             // Create reader object
             // Test URL: http://xmlservices.dataquick.com/UrlListener.aspx?ActionType=Search&Login=18486a99&Password=lender&OwnerFirst=&OwnerLast=&Address=3rd%20Ave&City=&State=&County=&Zip=95817&AddressType=Site&SearchType=UntilFound&DoCount=true&DoSearch=true&UsagePaging=false&MaxProp=99
-            m_xReader = XmlReader.Create(String.Format("{0}?ActionType=Search&Login={1}&Password={2}&OwnerFirst=&"
-                + "OwnerLast=&Address={3}&City=&State=&County=&Zip={4}&AddressType=Site&SearchType=UntilFound&DoCount=true&"
-                + "DoSearch=true&UsagePaging=false&MaxProp={5}",
-                strUrl, strUsername, strPassword, strAddress, strZip, nMax), settings);
+            m_strErrorMessage = "";
+            try
+            {
+                m_xReader = XmlReader.Create(String.Format("{0}?ActionType=Search&Login={1}&Password={2}&OwnerFirst=&"
+                    + "OwnerLast=&Address={3}&City=&State=&County=&Zip={4}&AddressType=Site&SearchType=UntilFound&DoCount=true&"
+                    + "DoSearch=true&UsagePaging=false&MaxProp={5}",
+                    strUrl, strUsername, strPassword, strAddress, strZip, nMax), settings);
 
-            while (m_xReader.Read() && m_xReader.Name != "RESPONSE_DATA") ;
+                while (m_xReader.Read() && m_xReader.Name != "RESPONSE_DATA") ;
 
-            // Advance to PROPERTY_INFORMATION_RESPONSE_ext
-            m_xReader.Read();
+                // Advance to PROPERTY_INFORMATION_RESPONSE_ext
+                m_xReader.Read();
 
-            // Advance to _MATCH_ext _Type
-            m_xReader.Read();
+                // Advance to _MATCH_ext _Type
+                m_xReader.Read();
+            }
+            catch (Exception e)
+            {
+                m_strErrorMessage = e.Message;
+            }
 
             // Pull the result count
             try
@@ -298,5 +328,6 @@ namespace PTCOrderSite.modules
         private string m_strOwner1First;
         private string m_strOwner2Last;
         private string m_strOwner2First;
+        private string m_strErrorMessage;
     }
 }
