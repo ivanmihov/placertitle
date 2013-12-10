@@ -10,7 +10,7 @@
 namespace PTCOrderSite {
     
     
-    public partial class WebForm1 {
+    public partial class MainMenu {
         
         /// <summary>
         /// ToolkitScriptManager1 control.
