@@ -9,7 +9,7 @@
     <h1>Place Order</h1>
 
     <div class="accordion">
-
+        <p style="margin-left: 77px;margin-bottom: -4px;font-size: 12px;">Required fields are marked with:<span class="red">  *</span></p>
         <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
         </asp:ToolkitScriptManager>
 
@@ -100,13 +100,20 @@
                                 <td class="tableFirstColumn">Office<span class="red">*</span></td>
                                 <td class="tableSecondColumn">
                                     <asp:DropDownList ID="office" runat="server" AutoPostBack="true" CssClass="dropdown"
-                                        OnSelectedIndexChanged="office_SelectedIndexChanged" >
+                                        OnSelectedIndexChanged="office_SelectedIndexChanged" EnableViewState="true" >
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">Escrow Officer<span class="red">*</span></td>
                                 <td class="tableFourthColumn">
-                                    <asp:DropDownList ID="escrowOfficer" runat="server" CssClass="dropdown">
-                                    </asp:DropDownList>
+                                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                    <Triggers>
+                                        <asp:AsyncPostbackTrigger ControlID="office" EventName="SelectedIndexChanged" />
+                                    </Triggers>
+                                    <ContentTemplate>
+                                        <asp:DropDownList ID="escrowOfficer" runat="server" CssClass="dropdown">
+                                        </asp:DropDownList>    
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
                                 </td>
                             </tr>
                             <tr>
