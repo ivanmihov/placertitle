@@ -76,20 +76,14 @@
                                     <asp:TextBox runat="server" ID="personEnterOrder" CssClass="textbox"></asp:TextBox></td>
                                 <td class="tableThirdColumn">You are the<span class="red">*</span></td>
                                 <td class="tableFourthColumn">
-                                    <asp:DropDownList ID="youAreThe" AutoPostBack="True" runat="server" CssClass="dropdown">
-                                        <asp:ListItem Selected="True" Value="Select"> Select </asp:ListItem>
-                                        <asp:ListItem Value="White"> White </asp:ListItem>
-                                        <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                        <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                        <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                        <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
+                                    <asp:DropDownList ID="youAreThe" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="tableFirstColumn">Transaction Type<span class="red">*</span></td>
                                 <td class="tableSecondColumn">
-                                    <asp:DropDownList ID="transactionType" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="transactionType" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn"></td>
@@ -105,20 +99,20 @@
                             <tr>
                                 <td class="tableFirstColumn">Office<span class="red">*</span></td>
                                 <td class="tableSecondColumn">
-                                    <asp:DropDownList ID="office" AutoPostBack="True" runat="server" CssClass="dropdown"
+                                    <asp:DropDownList ID="office" runat="server" AutoPostBack="true" CssClass="dropdown"
                                         OnSelectedIndexChanged="office_SelectedIndexChanged" >
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">Escrow Officer<span class="red">*</span></td>
                                 <td class="tableFourthColumn">
-                                    <asp:DropDownList ID="escrowOfficer" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="escrowOfficer" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="tableFirstColumn">Policy Type</td>
                                 <td class="tableSecondColumn">
-                                    <asp:DropDownList ID="policyType" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="policyType" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">Est. Closing Date<span class="red">*</span></td>
@@ -172,24 +166,24 @@
                             <tr>
                                 <td class="tableFirstColumn">Title</td>
                                 <td class="tableSecondColumn">
-                                    <asp:DropDownList ID="title" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="title" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">Escrow</td>
                                 <td class="tableFourthColumn">
-                                    <asp:DropDownList ID="escrow" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="escrow" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="tableFirstColumn">Transfer Tax</td>
                                 <td class="tableSecondColumn">
-                                    <asp:DropDownList ID="transferTax" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="transferTax" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">City Transfer Tax</td>
                                 <td class="tableFourthColumn">
-                                    <asp:DropDownList ID="cityTransferTax" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="cityTransferTax" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                             </tr>
@@ -204,7 +198,7 @@
                             <tr>
                                 <td class="tableFirstColumn">Transfer Fee</td>
                                 <td class="tableSecondColumn">
-                                    <asp:DropDownList ID="transferFee" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="transferFee" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn"></td>
@@ -213,36 +207,36 @@
                             <tr>
                                 <td class="tableFirstColumn">Termite Report</td>
                                 <td class="tableSecondColumn">
-                                    <asp:DropDownList ID="termiteReport" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="termiteReport" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">Termite Work</td>
                                 <td class="tableFourthColumn">
-                                    <asp:DropDownList ID="termiteWork" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="termiteWork" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="tableFirstColumn">Roof Report</td>
                                 <td class="tableSecondColumn">
-                                    <asp:DropDownList ID="roofReport" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="roofReport" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">Home Warranty</td>
                                 <td class="tableFourthColumn">
-                                    <asp:DropDownList ID="homeWarranty" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="homeWarranty" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="tableFirstColumn">Hazard Disclosure</td>
                                 <td class="tableSecondColumn">
-                                    <asp:DropDownList ID="hazardDisclosure" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="hazardDisclosure" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="tableThirdColumn">PTC to Order</td>
                                 <td class="tableFourthColumn">
-                                    <asp:DropDownList ID="ptcOrder" AutoPostBack="True" runat="server" CssClass="dropdown">
+                                    <asp:DropDownList ID="ptcOrder" runat="server" CssClass="dropdown">
                                     </asp:DropDownList>
                                 </td>
                             </tr>
