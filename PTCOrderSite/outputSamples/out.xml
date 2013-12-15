@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ORDER>
+  <CUST_NUMBER />
+  <ORDER_SERVICE />
+  <ORDER_TYPE />
+  <GENERAL_INFO>
+    <REF_NUMBER />
+    <DUE_DATE />
+    <CONTACT_ENTERING />
+    <YOU_ARE />
+    <TRANSACTION_TYPE />
+    <PRODUCT />
+    <ENDORSEMENTS />
+  </GENERAL_INFO>
+  <ESCROW_INFO>
+    <OFFICE />
+    <ESCROW_OFFICER />
+    <EST_CLOSING_DATE />
+    <POLICY_TYPE />
+  </ESCROW_INFO>
+  <ESCROW_TERMS>
+    <PURCHASE_PRICE />
+    <EARNEST_MONEY />
+    <LISTING_PERCENT />
+    <LISTING_AND_OR />
+    <SELLING_PERCENT />
+    <SELLING_AND_OR />
+    <WHO_PAYS>
+      <TITLE />
+      <ESCROW />
+      <TRANSFER_TAX />
+      <HOME_ASSOC />
+      <HOME_ASSOC_NAME />
+      <TRANSFER_FEE />
+      <TERMITE_REPORT />
+      <TERMITE_WORK />
+      <ROOF_REPORT />
+      <HOME_WARRANTY />
+      <HAZARD />
+      <PTC_TO_ORDER />
+    </WHO_PAYS>
+  </ESCROW_TERMS>
+  <PAYOFF_INFO>
+    <FIRST_LENDER_NAME />
+    <FIRST_LOAN_NUMBER />
+    <FIRST_PHONE />
+    <FIRST_DISPOSITION />
+    <SECOND_LENDER_NAME />
+    <SECOND_LOAN_NUMBER />
+    <SECOND_PHONE />
+    <SECOND_DISPOSITION />
+    <PAYOFF_SPECIAL_INSTR />
+  </PAYOFF_INFO>
+  <SELLER_INFO>
+    <SELLER1_FIRST_NAME />
+    <SELLER1_MI />
+    <SELLER1_LAST_NAME />
+    <SELLER1_SSN />
+    <SELLER2_FIRST_NAME />
+    <SELLER2_MI />
+    <SELLER2_LAST_NAME />
+    <SELLER2_SSN />
+    <SELLER_DPS>
+      <ADDRESS />
+      <CITY />
+      <STATE />
+      <ZIP_CODE />
+      <ATTENTION />
+      <EMAIL />
+      <WORK_PHONE />
+      <WORK_EXT />
+      <FAX />
+      <HOME_PHONE />
+      <CELL_PHONE />
+      <OTHER_PHONE />
+      <NO_COPIES />
+      <COPIES_CCR />
+      <EXCEPTION_COPIES />
+      <DELIVERY_TYPE />
+    </SELLER_DPS>
+  </SELLER_INFO>
+  <BUYER_BORROWER>
+    <BUYER1_FIRST_NAME />
+    <BUYER1_MI />
+    <BUYER1_LAST_NAME />
+    <BUYER1_SSN />
+    <BUYER2_FIRST_NAME />
+    <BUYER2_MI />
+    <BUYER2_LAST_NAME />
+    <BUYER2_SSN />
+    <BUYER_DPS>
+      <ADDRESS />
+      <CITY />
+      <STATE />
+      <ZIP_CODE />
+      <ATTENTION />
+      <EMAIL />
+      <WORK_PHONE />
+      <WORK_EXT />
+      <FAX />
+      <HOME_PHONE />
+      <CELL_PHONE />
+      <OTHER_PHONE />
+      <NO_COPIES />
+      <COPIES_CCR />
+      <EXCEPTION_COPIES />
+      <DELIVERY_TYPE />
+    </BUYER_DPS>
+  </BUYER_BORROWER>
+  <PROPERTY_INFO>
+    <ADDRESS />
+    <CITY />
+    <STATE />
+    <ZIP_CODE />
+    <COUNTY />
+    <APN />
+    <LEGAL_DESC />
+    <SPECIAL_INSTR />
+  </PROPERTY_INFO>
+  <LISTING_AGENT_DELIVERY>
+    <LENDER_COMPANY />
+    <LENDER_DPS>
+      <ADDRESS />
+      <CITY />
+      <STATE />
+      <ZIP_CODE />
+      <ATTENTION />
+      <EMAIL />
+      <WORK_PHONE />
+      <WORK_EXT />
+      <FAX />
+      <HOME_PHONE />
+      <CELL_PHONE />
+      <OTHER_PHONE />
+      <NO_COPIES />
+      <COPIES_CCR />
+      <EXCEPTION_COPIES />
+      <DELIVERY_TYPE />
+    </LENDER_DPS>
+  </LISTING_AGENT_DELIVERY>
+  <BUYER_AGENT_DELIVERY>
+    <BAGENT_COMPANY />
+    <BAGENT_DPS>
+      <ADDRESS />
+      <CITY />
+      <STATE />
+      <ZIP_CODE />
+      <ATTENTION />
+      <EMAIL />
+      <WORK_PHONE />
+      <WORK_EXT />
+      <FAX />
+      <HOME_PHONE />
+      <CELL_PHONE />
+      <OTHER_PHONE />
+      <NO_COPIES />
+      <COPIES_CCR />
+      <EXCEPTION_COPIES />
+      <DELIVERY_TYPE />
+    </BAGENT_DPS>
+  </BUYER_AGENT_DELIVERY>
+  <LENDER_DELIVERY>
+    <LAGENT_COMPANY />
+    <LAGENT_DPS>
+      <ADDRESS />
+      <CITY />
+      <STATE />
+      <ZIP_CODE />
+      <ATTENTION />
+      <EMAIL />
+      <WORK_PHONE />
+      <WORK_EXT />
+      <FAX />
+      <HOME_PHONE />
+      <CELL_PHONE />
+      <OTHER_PHONE />
+      <NO_COPIES />
+      <COPIES_CCR />
+      <EXCEPTION_COPIES />
+      <DELIVERY_TYPE />
+    </LAGENT_DPS>
+  </LENDER_DELIVERY>
+  <BORROWER_DELIVERY>
+    <BORROWER_COMPANY />
+    <BORROWER_DPS>
+      <ADDRESS />
+      <CITY />
+      <STATE />
+      <ZIP_CODE />
+      <ATTENTION />
+      <EMAIL />
+      <WORK_PHONE />
+      <WORK_EXT />
+      <FAX />
+      <HOME_PHONE />
+      <CELL_PHONE />
+      <OTHER_PHONE />
+      <NO_COPIES />
+      <COPIES_CCR />
+      <EXCEPTION_COPIES />
+      <DELIVERY_TYPE />
+    </BORROWER_DPS>
+  </BORROWER_DELIVERY>
+  <OTHER1_DELIVERY>
+    <OTHER1_COMPANY />
+    <OTHER1_DPS>
+      <ADDRESS />
+      <CITY />
+      <STATE />
+      <ZIP_CODE />
+      <ATTENTION />
+      <EMAIL />
+      <WORK_PHONE />
+      <WORK_EXT />
+      <FAX />
+      <HOME_PHONE />
+      <CELL_PHONE />
+      <OTHER_PHONE />
+      <NO_COPIES />
+      <COPIES_CCR />
+      <EXCEPTION_COPIES />
+      <DELIVERY_TYPE />
+    </OTHER1_DPS>
+  </OTHER1_DELIVERY>
+  <OTHER2_DELIVERY>
+    <OTHER2_COMPANY />
+    <OTHER2_DPS>
+      <ADDRESS />
+      <CITY />
+      <STATE />
+      <ZIP_CODE />
+      <ATTENTION />
+      <EMAIL />
+      <WORK_PHONE />
+      <WORK_EXT />
+      <FAX />
+      <HOME_PHONE />
+      <CELL_PHONE />
+      <OTHER_PHONE />
+      <NO_COPIES />
+      <COPIES_CCR />
+      <EXCEPTION_COPIES />
+      <DELIVERY_TYPE />
+    </OTHER2_DPS>
+  </OTHER2_DELIVERY>
+</ORDER>
