@@ -22,7 +22,7 @@
             FadeTransitions="true"
             runat="server">
             <Panes>
-                <asp:AccordionPane ID="AccordionPane1" runat="server">
+                <asp:AccordionPane ID="PropertyInformation" runat="server">
                     <Header>Property Information<span class="accordionHeaderExpand"></span></Header>
                     <Content>
                         <table class="accordionBorder">
@@ -59,7 +59,7 @@
                         </table>
                     </Content>
                 </asp:AccordionPane>
-                <asp:AccordionPane ID="AccordionPane2" runat="server">
+                <asp:AccordionPane ID="GeneralInformation" runat="server">
                     <Header>General Information<span class="accordionHeaderExpand"></span></Header>
                     <Content>
                         <table class="accordionBorder">
@@ -92,7 +92,7 @@
                         </table>
                     </Content>
                 </asp:AccordionPane>
-                <asp:AccordionPane ID="AccordionPane3" runat="server">
+                <asp:AccordionPane ID="EscrowInformation" runat="server">
                     <Header>Escrow Information<span class="accordionHeaderExpand"></span></Header>
                     <Content>
                         <table class="accordionBorder">
@@ -124,7 +124,7 @@
                         </table>
                     </Content>
                 </asp:AccordionPane>
-                <asp:AccordionPane ID="AccordionPane4" runat="server">
+                <asp:AccordionPane ID="EscrowTerms" runat="server">
                     <Header>Escrow Terms Information<span class="accordionHeaderExpand"></span></Header>
                     <Content>
                         <table class="accordionBorder">
@@ -159,7 +159,7 @@
                         </table>
                     </Content>
                 </asp:AccordionPane>
-                <asp:AccordionPane ID="AccordionPane5" runat="server">
+                <asp:AccordionPane ID="WhoPays" runat="server">
                     <Header>Who Pays?<span class="accordionHeaderExpand"></span></Header>
                     <Content>
                         <table class="accordionBorder">
@@ -193,16 +193,7 @@
                                     <asp:CheckBox runat="server" ID="homeownersAssoc" /></td>
                                 <td class="tableThirdColumn">Name</td>
                                 <td class="tableFourthColumn">
-                                    <asp:TextBox runat="server" ID="name" CssClass="textbox"></asp:TextBox></td>
-                            </tr>
-                            <tr>
-                                <td class="tableFirstColumn">Transfer Fee</td>
-                                <td class="tableSecondColumn">
-                                    <asp:DropDownList ID="transferFee" runat="server" CssClass="dropdown">
-                                    </asp:DropDownList>
-                                </td>
-                                <td class="tableThirdColumn"></td>
-                                <td class="tableFourthColumn"></td>
+                                    <asp:TextBox runat="server" ID="homeownersAssocName" CssClass="textbox"></asp:TextBox></td>
                             </tr>
                             <tr>
                                 <td class="tableFirstColumn">Termite Report</td>

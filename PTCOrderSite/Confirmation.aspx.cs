@@ -23,42 +23,42 @@ namespace PTCOrderSite
             mlhcWriter.WriteElement("ORDER_TYPE", "");
 
             mlhcWriter.CreateSection("GENERAL_INFO");
-            mlhcWriter.WriteElement("REF_NUMBER", "");
+            mlhcWriter.WriteElement("REF_NUMBER", Request.Form["ctl00$body$GeneralInformation_content$referenceNum"]);
             mlhcWriter.WriteElement("DUE_DATE", "");
-            mlhcWriter.WriteElement("CONTACT_ENTERING", "");
-            mlhcWriter.WriteElement("YOU_ARE", "");
-            mlhcWriter.WriteElement("TRANSACTION_TYPE", "");
+            mlhcWriter.WriteElement("CONTACT_ENTERING", Request.Form["ctl00$body$GeneralInformation_content$personEnterOrder"]);
+            mlhcWriter.WriteElement("YOU_ARE", Request.Form["ctl00$body$GeneralInformation_content$youAreThe"]);
+            mlhcWriter.WriteElement("TRANSACTION_TYPE", Request.Form["ctl00$body$GeneralInformation_content$transactionType"]);
             mlhcWriter.WriteElement("PRODUCT", "");
             mlhcWriter.WriteElement("ENDORSEMENTS", "");
             mlhcWriter.CloseSection(); // GENERAL_INFO
 
             mlhcWriter.CreateSection("ESCROW_INFO");
-            mlhcWriter.WriteElement("OFFICE", "");
-            mlhcWriter.WriteElement("ESCROW_OFFICER", "");
-            mlhcWriter.WriteElement("EST_CLOSING_DATE", "");
-            mlhcWriter.WriteElement("POLICY_TYPE", "");
+            mlhcWriter.WriteElement("OFFICE", Request.Form["ctl00$body$EscrowInformation_content$office"]);
+            mlhcWriter.WriteElement("ESCROW_OFFICER", Request.Form["ctl00$body$EscrowInformation_content$escrowOfficer"]);
+            mlhcWriter.WriteElement("EST_CLOSING_DATE", Request.Form["ctl00$body$EscrowInformation_content$estClosingDate"]);
+            mlhcWriter.WriteElement("POLICY_TYPE", Request.Form["ctl00$body$EscrowInformation_content$policyType"]);
             mlhcWriter.CloseSection(); // ESCROW_INFO
 
             mlhcWriter.CreateSection("ESCROW_TERMS");
-            mlhcWriter.WriteElement("PURCHASE_PRICE", "");
-            mlhcWriter.WriteElement("EARNEST_MONEY", "");
-            mlhcWriter.WriteElement("LISTING_PERCENT", "");
-            mlhcWriter.WriteElement("LISTING_AND_OR", "");
-            mlhcWriter.WriteElement("SELLING_PERCENT", "");
-            mlhcWriter.WriteElement("SELLING_AND_OR", "");
+            mlhcWriter.WriteElement("PURCHASE_PRICE", Request.Form["ctl00$body$EscrowTerms_content$purchasePrice"]);
+            mlhcWriter.WriteElement("EARNEST_MONEY", Request.Form["ctl00$body$EscrowTerms_content$moneyDeposit"]);
+            mlhcWriter.WriteElement("LISTING_PERCENT", Request.Form["ctl00$body$EscrowTerms_content$listingCompany"]);
+            mlhcWriter.WriteElement("LISTING_AND_OR", Request.Form["ctl00$body$EscrowTerms_content$listingCompanyAndOr"]);
+            mlhcWriter.WriteElement("SELLING_PERCENT", Request.Form["ctl00$body$EscrowTerms_content$sellingCompany"]);
+            mlhcWriter.WriteElement("SELLING_AND_OR", Request.Form["ctl00$body$EscrowTerms_content$sellingCompanyAndOr"]);
             mlhcWriter.CreateSection("WHO_PAYS");
-            mlhcWriter.WriteElement("TITLE", "");
-            mlhcWriter.WriteElement("ESCROW", "");
-            mlhcWriter.WriteElement("TRANSFER_TAX", "");
-            mlhcWriter.WriteElement("HOME_ASSOC", "");
-            mlhcWriter.WriteElement("HOME_ASSOC_NAME", "");
-            mlhcWriter.WriteElement("TRANSFER_FEE", "");
-            mlhcWriter.WriteElement("TERMITE_REPORT", "");
-            mlhcWriter.WriteElement("TERMITE_WORK", "");
-            mlhcWriter.WriteElement("ROOF_REPORT", "");
-            mlhcWriter.WriteElement("HOME_WARRANTY", "");
-            mlhcWriter.WriteElement("HAZARD", "");
-            mlhcWriter.WriteElement("PTC_TO_ORDER", "");
+            mlhcWriter.WriteElement("TITLE", Request.Form["ctl00$body$WhoPays_content$title"]);
+            mlhcWriter.WriteElement("ESCROW", Request.Form["ctl00$body$WhoPays_content$escrow"]);
+            mlhcWriter.WriteElement("TRANSFER_TAX", Request.Form["ctl00$body$WhoPays_content$transferTax"]);
+            mlhcWriter.WriteElement("HOME_ASSOC", Request.Form["ctl00$body$WhoPays_content$homeownersAssoc"]);
+            mlhcWriter.WriteElement("HOME_ASSOC_NAME", Request.Form["ctl00$body$WhoPays_content$homeownersAssocName"]);
+            mlhcWriter.WriteElement("TRANSFER_FEE", Request.Form["ctl00$body$WhoPays_content$cityTransferTax"]);
+            mlhcWriter.WriteElement("TERMITE_REPORT", Request.Form["ctl00$body$WhoPays_content$termiteReport"]);
+            mlhcWriter.WriteElement("TERMITE_WORK", Request.Form["ctl00$body$WhoPays_content$termiteWork"]);
+            mlhcWriter.WriteElement("ROOF_REPORT", Request.Form["ctl00$body$WhoPays_content$roofReport"]);
+            mlhcWriter.WriteElement("HOME_WARRANTY", Request.Form["ctl00$body$WhoPays_content$homeWarranty"]);
+            mlhcWriter.WriteElement("HAZARD", Request.Form["ctl00$body$WhoPays_content$hazardDisclosure"]);
+            mlhcWriter.WriteElement("PTC_TO_ORDER", Request.Form["ctl00$body$WhoPays_content$ptcOrder"]);
             mlhcWriter.CloseSection(); // WHO_PAYS
             mlhcWriter.CloseSection(); // ESCROW_TERMS
 
@@ -75,19 +75,19 @@ namespace PTCOrderSite
             mlhcWriter.CloseSection(); // PAYOFF_INFO
 
             mlhcWriter.CreateSection("SELLER_INFO");
-            mlhcWriter.WriteElement("SELLER1_FIRST_NAME", "");
+            mlhcWriter.WriteElement("SELLER1_FIRST_NAME", Request.Form["ctl00$body$PropertyInformation_content$txtOwner1First"]);
             mlhcWriter.WriteElement("SELLER1_MI", "");
-            mlhcWriter.WriteElement("SELLER1_LAST_NAME", "");
+            mlhcWriter.WriteElement("SELLER1_LAST_NAME", Request.Form["ctl00$body$PropertyInformation_content$txtOwner1Last"]);
             mlhcWriter.WriteElement("SELLER1_SSN", "");
-            mlhcWriter.WriteElement("SELLER2_FIRST_NAME", "");
+            mlhcWriter.WriteElement("SELLER2_FIRST_NAME", Request.Form["ctl00$body$PropertyInformation_content$txtOwner2First"]);
             mlhcWriter.WriteElement("SELLER2_MI", "");
-            mlhcWriter.WriteElement("SELLER2_LAST_NAME", "");
+            mlhcWriter.WriteElement("SELLER2_LAST_NAME", Request.Form["ctl00$body$PropertyInformation_content$txtOwner2Last"]);
             mlhcWriter.WriteElement("SELLER2_SSN", "");
             mlhcWriter.CreateSection("SELLER_DPS");
-            mlhcWriter.WriteElement("ADDRESS", "");
-            mlhcWriter.WriteElement("CITY", "");
-            mlhcWriter.WriteElement("STATE", "");
-            mlhcWriter.WriteElement("ZIP_CODE", "");
+            mlhcWriter.WriteElement("ADDRESS", Request.Form["ctl00$body$PropertyInformation_content$txtAddress"]);
+            mlhcWriter.WriteElement("CITY", Request.Form["ctl00$body$PropertyInformation_content$txtCity"]);
+            mlhcWriter.WriteElement("STATE", Request.Form["ctl00$body$PropertyInformation_content$txtState"]);
+            mlhcWriter.WriteElement("ZIP_CODE", Request.Form["ctl00$body$PropertyInformation_content$txtZip"]);
             mlhcWriter.WriteElement("ATTENTION", "");
             mlhcWriter.WriteElement("EMAIL", "");
             mlhcWriter.WriteElement("WORK_PHONE", "");
@@ -133,12 +133,12 @@ namespace PTCOrderSite
             mlhcWriter.CloseSection(); // BUYER_BORROWER
 
             mlhcWriter.CreateSection("PROPERTY_INFO");
-            mlhcWriter.WriteElement("ADDRESS", "");
-            mlhcWriter.WriteElement("CITY", "");
-            mlhcWriter.WriteElement("STATE", "");
-            mlhcWriter.WriteElement("ZIP_CODE", "");
-            mlhcWriter.WriteElement("COUNTY", "");
-            mlhcWriter.WriteElement("APN", "");
+            mlhcWriter.WriteElement("ADDRESS", Request.Form["ctl00$body$PropertyInformation_content$txtAddress"]);
+            mlhcWriter.WriteElement("CITY", Request.Form["ctl00$body$PropertyInformation_content$txtCity"]);
+            mlhcWriter.WriteElement("STATE", Request.Form["ctl00$body$PropertyInformation_content$txtState"]);
+            mlhcWriter.WriteElement("ZIP_CODE", Request.Form["ctl00$body$PropertyInformation_content$txtZip"]);
+            mlhcWriter.WriteElement("COUNTY", Request.Form["ctl00$body$PropertyInformation_content$txtCounty"]);
+            mlhcWriter.WriteElement("APN", Request.Form["ctl00$body$PropertyInformation_content$txtAPN"]);
             mlhcWriter.WriteElement("LEGAL_DESC", "");
             mlhcWriter.WriteElement("SPECIAL_INSTR", "");
             mlhcWriter.CloseSection(); // PROPERTY_INFO

@@ -40,13 +40,13 @@ namespace PTCOrderSite {
         protected global::AjaxControlToolkit.Accordion Accordion1;
         
         /// <summary>
-        /// AccordionPane1 control.
+        /// PropertyInformation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane1;
+        protected global::AjaxControlToolkit.AccordionPane PropertyInformation;
         
         /// <summary>
         /// txtOwner1First control.
@@ -139,13 +139,13 @@ namespace PTCOrderSite {
         protected global::System.Web.UI.WebControls.TextBox txtAPN;
         
         /// <summary>
-        /// AccordionPane2 control.
+        /// GeneralInformation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane2;
+        protected global::AjaxControlToolkit.AccordionPane GeneralInformation;
         
         /// <summary>
         /// referenceNum control.
@@ -184,13 +184,13 @@ namespace PTCOrderSite {
         protected global::System.Web.UI.WebControls.DropDownList transactionType;
         
         /// <summary>
-        /// AccordionPane3 control.
+        /// EscrowInformation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane3;
+        protected global::AjaxControlToolkit.AccordionPane EscrowInformation;
         
         /// <summary>
         /// office control.
@@ -238,13 +238,13 @@ namespace PTCOrderSite {
         protected global::AjaxControlToolkit.CalendarExtender CalendarExtenderClosingDate;
         
         /// <summary>
-        /// AccordionPane4 control.
+        /// EscrowTerms control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane4;
+        protected global::AjaxControlToolkit.AccordionPane EscrowTerms;
         
         /// <summary>
         /// purchasePrice control.
@@ -301,13 +301,13 @@ namespace PTCOrderSite {
         protected global::System.Web.UI.WebControls.TextBox sellingCompanyAndOr;
         
         /// <summary>
-        /// AccordionPane5 control.
+        /// WhoPays control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane5;
+        protected global::AjaxControlToolkit.AccordionPane WhoPays;
         
         /// <summary>
         /// title control.
@@ -355,22 +355,13 @@ namespace PTCOrderSite {
         protected global::System.Web.UI.WebControls.CheckBox homeownersAssoc;
         
         /// <summary>
-        /// name control.
+        /// homeownersAssocName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name;
-        
-        /// <summary>
-        /// transferFee control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList transferFee;
+        protected global::System.Web.UI.WebControls.TextBox homeownersAssocName;
         
         /// <summary>
         /// termiteReport control.
