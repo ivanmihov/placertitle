@@ -73,16 +73,6 @@ namespace PTCOrderSite
         }
 
         /// <summary>
-        /// Submit button clicked event handler
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        protected void cmdSubmit_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("MainMenu.aspx");
-        }
-
-        /// <summary>
         /// Escrow office drop-down list, selected index changed event handler. Re-populates list of
         /// escrow officers
         /// </summary>

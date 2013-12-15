@@ -10,11 +10,11 @@ namespace PTCOrderSite
     public partial class PTCOrderSiteMaster : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {/* removing for test
             object username = Session["username"];
             if ((username == null || username.ToString() == "")
                 && Page.ToString() != "ASP.login_aspx")
-                Response.Redirect("~/Login.aspx");
+                Response.Redirect("~/Login.aspx");*/
         }
     }
 }

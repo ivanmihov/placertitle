@@ -152,6 +152,7 @@
     <Compile Include="Error.aspx.designer.cs">
       <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
+    <Compile Include="modules\MLHC_XmlWriter.cs" />
     <Compile Include="modules\DataQuickResponse.cs" />
     <Compile Include="modules\EscrowOffices.cs" />
     <Compile Include="modules\MLHC_XmlTools.cs" />

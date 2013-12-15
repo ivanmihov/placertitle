@@ -258,7 +258,7 @@
     <br />
     <div style="text-align: center">
         <asp:Button runat="server" ID="cmdSubmit" Text="Submit"
-            OnClick="cmdSubmit_Click" CssClass="submitButton" />
+            PostBackUrl="~/Confirmation.aspx" CssClass="submitButton" />
     </div>
     <br />
 </asp:Content>
