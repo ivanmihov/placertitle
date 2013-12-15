@@ -38,7 +38,7 @@
             <ul>
                 <li><a href="MainMenu.aspx">HOME</a></li>
                 <li><a href="#">CONTACT</a></li>
-                <li><a href="EnterAddress.aspx">ACCOUNT MENU</a></li>
+                <li><a href="#">ACCOUNT MENU</a></li>
                 <li><a href="Login.aspx">LOGOUT</a></li>
             </ul>
         </div>

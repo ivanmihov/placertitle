@@ -78,8 +78,6 @@ input {
     }
 
         .formBox li a:hover {
-            display: list-item;
-            list-style-type: disc;
             text-decoration: underline;
         }
 
@@ -433,7 +431,7 @@ input {
 }
 
     .accordionHeaderSelected span:after {
-        content: "-";
+        content: "‒";
     }
 
 .accordionContent {
